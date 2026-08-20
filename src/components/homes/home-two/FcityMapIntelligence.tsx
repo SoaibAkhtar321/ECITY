@@ -1,33 +1,100 @@
 "use client"
-import { useState } from "react"
+import { useMemo, useState } from "react"
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api"
 
 interface MarkerType {
    id: number;
    name: string;
-   x: number; // percentage
-   y: number; // percentage
+   lat: number;
+   lng: number;
    highlight?: boolean;
 }
 
+// Approximate real-world coordinates for the Future City / southern
+// Hyderabad growth corridor (Rangareddy district, NH-44 / ORR belt).
+// Verified against public map data where available (Mucherla, Adibatla);
+// remaining points are placed at each town's known approximate centre and
+// should be refined with surveyed plot coordinates as real inventory is
+// onboarded.
 const markers: MarkerType[] = [
-   { id: 1, name: "Future City", x: 50, y: 46, highlight: true },
-   { id: 2, name: "Mucherla", x: 42, y: 40 },
-   { id: 3, name: "Maheshwaram", x: 34, y: 30 },
-   { id: 4, name: "Kandukur", x: 58, y: 42 },
-   { id: 5, name: "Kadthal", x: 46, y: 60 },
-   { id: 6, name: "Yacharam", x: 62, y: 58 },
-   { id: 7, name: "Tukkuguda", x: 30, y: 52 },
-   { id: 8, name: "Adibatla", x: 22, y: 44 },
-   { id: 9, name: "Bongloor", x: 66, y: 34 },
-   { id: 10, name: "Ibrahimpatnam", x: 70, y: 50 },
-   { id: 11, name: "Shamshabad", x: 20, y: 24 },
-   { id: 12, name: "Kothur", x: 30, y: 20 },
-   { id: 13, name: "Shadnagar", x: 20, y: 12 },
-   { id: 14, name: "Farooqnagar", x: 38, y: 14 },
+   { id: 1, name: "Future City", lat: 17.1950, lng: 78.5600, highlight: true },
+   { id: 2, name: "Mucherla", lat: 17.0153, lng: 78.5167 },
+   { id: 3, name: "Maheshwaram", lat: 17.0656, lng: 78.4844 },
+   { id: 4, name: "Kandukur", lat: 17.2264, lng: 78.5822 },
+   { id: 5, name: "Kadthal", lat: 17.0219, lng: 78.5719 },
+   { id: 6, name: "Yacharam", lat: 17.0961, lng: 78.5967 },
+   { id: 7, name: "Tukkuguda", lat: 17.1928, lng: 78.5119 },
+   { id: 8, name: "Adibatla", lat: 17.2306, lng: 78.5433 },
+   { id: 9, name: "Bongloor", lat: 17.1719, lng: 78.6167 },
+   { id: 10, name: "Ibrahimpatnam", lat: 17.2333, lng: 78.6167 },
+   { id: 11, name: "Shamshabad", lat: 17.2277, lng: 78.4108 },
+   { id: 12, name: "Kothur", lat: 17.1167, lng: 78.2667 },
+   { id: 13, name: "Shadnagar", lat: 17.0667, lng: 78.2000 },
+   { id: 14, name: "Farooqnagar", lat: 17.1167, lng: 78.2833 },
 ]
+
+const HYDERABAD_AIRPORT = { lat: 17.2403, lng: 78.4294, name: "Hyderabad Airport" };
+
+const MAP_CONTAINER_STYLE = { width: "100%", height: "100%" };
+
+// Muted "ivory/stone" map styling so the live map matches the site's
+// existing gold/ivory/charcoal palette instead of Google's default blue/grey.
+const MAP_STYLES: google.maps.MapTypeStyle[] = [
+   { elementType: "geometry", stylers: [{ color: "#f4f2e9" }] },
+   { elementType: "labels.text.fill", stylers: [{ color: "#5f5a48" }] },
+   { elementType: "labels.text.stroke", stylers: [{ color: "#f4f2e9" }] },
+   { featureType: "road", elementType: "geometry", stylers: [{ color: "#e4dfc9" }] },
+   { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#c9a76b" }] },
+   { featureType: "water", elementType: "geometry", stylers: [{ color: "#cfd9bd" }] },
+   { featureType: "poi", stylers: [{ visibility: "off" }] },
+   { featureType: "transit", stylers: [{ visibility: "off" }] },
+];
 
 const FcityMapIntelligence = () => {
    const [active, setActive] = useState<MarkerType>(markers[0]);
+
+   const { isLoaded, loadError } = useJsApiLoader({
+      id: "fcity-google-map-script",
+      googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "",
+   });
+
+   const highlightIcon = useMemo(() => {
+      if (!isLoaded) return undefined;
+      return {
+         path: google.maps.SymbolPath.CIRCLE,
+         scale: 10,
+         fillColor: "#c19a4b",
+         fillOpacity: 1,
+         strokeColor: "#fff",
+         strokeWeight: 2,
+      };
+   }, [isLoaded]);
+
+   const nodeIcon = useMemo(() => {
+      if (!isLoaded) return undefined;
+      return (selected: boolean) => ({
+         path: google.maps.SymbolPath.CIRCLE,
+         scale: 7,
+         fillColor: selected ? "#8a6d2f" : "#3f7a52",
+         fillOpacity: 1,
+         strokeColor: "#fff",
+         strokeWeight: 2,
+      });
+   }, [isLoaded]);
+
+   const airportIcon = useMemo(() => {
+      if (!isLoaded) return undefined;
+      return {
+         path: google.maps.SymbolPath.CIRCLE,
+         scale: 5,
+         fillColor: "#7a8fa6",
+         fillOpacity: 1,
+         strokeColor: "#fff",
+         strokeWeight: 1.5,
+      };
+   }, [isLoaded]);
+
+   const hasApiKey = Boolean(process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY);
 
    return (
       <div className="fcity-map-intel position-relative z-1 mt-150 xl-mt-120 md-mt-80">
@@ -38,29 +105,54 @@ const FcityMapIntelligence = () => {
             </div>
 
             <div className="map-frame position-relative wow fadeInUp">
-               <svg viewBox="0 0 500 340" className="map-svg" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="500" height="340" fill="#f4f2e9" />
-                  {/* corridor lines */}
-                  <path d="M40 260 C160 220, 260 200, 460 90" stroke="#c9a76b" strokeWidth="4" fill="none" opacity="0.6" />
-                  <text x="330" y="120" fontSize="11" fill="#8a6d2f" opacity="0.8">NH-44 / Bangalore Highway</text>
-                  <path d="M250 30 C240 120, 260 220, 300 320" stroke="#9bab7c" strokeWidth="3" fill="none" opacity="0.55" strokeDasharray="6 5" />
-                  <text x="255" y="60" fontSize="11" fill="#5f7245" opacity="0.8">ORR</text>
-                  <path d="M60 90 C180 150, 280 190, 420 230" stroke="#9bab7c" strokeWidth="3" fill="none" opacity="0.4" strokeDasharray="6 5" />
-                  <text x="70" y="82" fontSize="11" fill="#5f7245" opacity="0.8">SH-19</text>
-
-                  {/* airport marker */}
-                  <g transform="translate(90,95)">
-                     <circle r="5" fill="#7a8fa6" />
-                     <text x="10" y="4" fontSize="11" fill="#5a6b7d">Hyderabad Airport</text>
-                  </g>
-
-                  {markers.map((m) => (
-                     <g key={m.id} transform={`translate(${(m.x / 100) * 500}, ${(m.y / 100) * 340})`} style={{ cursor: "pointer" }} onClick={() => setActive(m)}>
-                        <circle r={m.highlight ? 9 : 6} fill={m.highlight ? "#c19a4b" : active.id === m.id ? "#8a6d2f" : "#3f7a52"} stroke="#fff" strokeWidth="2" />
-                        {m.highlight && <circle r="16" fill="none" stroke="#c19a4b" strokeWidth="1.5" opacity="0.55" />}
-                     </g>
-                  ))}
-               </svg>
+               <div className="map-canvas">
+                  {!hasApiKey ? (
+                     <div className="map-fallback d-flex align-items-center justify-content-center text-center">
+                        <div>
+                           <i className="fa-regular fa-map-location-dot fs-2 mb-2 d-block"></i>
+                           Live map requires a Google Maps API key.<br />
+                           Set <code>NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> in your environment.
+                        </div>
+                     </div>
+                  ) : loadError ? (
+                     <div className="map-fallback d-flex align-items-center justify-content-center text-center">
+                        Couldn&apos;t load Google Maps. Check the API key and enabled APIs.
+                     </div>
+                  ) : !isLoaded ? (
+                     <div className="map-fallback d-flex align-items-center justify-content-center text-center">
+                        Loading map…
+                     </div>
+                  ) : (
+                     <GoogleMap
+                        mapContainerStyle={MAP_CONTAINER_STYLE}
+                        center={{ lat: 17.16, lng: 78.5 }}
+                        zoom={11}
+                        options={{
+                           styles: MAP_STYLES,
+                           disableDefaultUI: true,
+                           zoomControl: true,
+                           streetViewControl: false,
+                           mapTypeControl: false,
+                           fullscreenControl: false,
+                        }}
+                     >
+                        <Marker
+                           position={HYDERABAD_AIRPORT}
+                           icon={airportIcon}
+                           title={HYDERABAD_AIRPORT.name}
+                        />
+                        {markers.map((m) => (
+                           <Marker
+                              key={m.id}
+                              position={{ lat: m.lat, lng: m.lng }}
+                              icon={m.highlight ? highlightIcon : nodeIcon && nodeIcon(active.id === m.id)}
+                              title={m.name}
+                              onClick={() => setActive(m)}
+                           />
+                        ))}
+                     </GoogleMap>
+                  )}
+               </div>
 
                <div className="intel-panel">
                   <div className="intel-title fw-500">FCITY PROPERTY INTELLIGENCE</div>
@@ -87,10 +179,25 @@ const FcityMapIntelligence = () => {
                padding: 18px;
                box-shadow: 0 20px 50px rgba(20, 20, 10, 0.06);
             }
-            .map-svg {
+            .map-canvas {
                width: 100%;
-               height: auto;
+               height: 420px;
                border-radius: 10px;
+               overflow: hidden;
+               background: #f4f2e9;
+            }
+            .map-fallback {
+               width: 100%;
+               height: 100%;
+               font-size: 13px;
+               color: #7a7360;
+               padding: 20px;
+            }
+            .map-fallback code {
+               background: #f3f1e7;
+               padding: 2px 6px;
+               border-radius: 4px;
+               font-size: 12px;
             }
             .intel-panel {
                position: absolute;
@@ -103,6 +210,7 @@ const FcityMapIntelligence = () => {
                padding: 18px 22px;
                width: 240px;
                box-shadow: 0 12px 30px rgba(20, 20, 10, 0.08);
+               pointer-events: none;
             }
             .intel-title {
                font-size: 11px;
@@ -128,6 +236,10 @@ const FcityMapIntelligence = () => {
                   position: static;
                   width: 100%;
                   margin-top: 16px;
+                  pointer-events: auto;
+               }
+               .map-canvas {
+                  height: 320px;
                }
             }
          `}</style>
