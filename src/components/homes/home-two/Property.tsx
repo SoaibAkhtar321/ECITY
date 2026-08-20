@@ -1,8 +1,11 @@
 import property_data from "@/data/home-data/PropertyData"
 import Image from "next/image"
 import Link from "next/link"
+import PropertyTypeVisual from "./PropertyTypeVisual"
 
 import propertyShape from "@/assets/images/shape/shape_17.svg"
+
+const isLandType = (type?: string) => type === "Plot" || type === "Land" || type === "Corporate Land";
 
 
 const Property = () => {
@@ -22,20 +25,26 @@ const Property = () => {
                            <div className="img-gallery">
                               <div className="position-relative overflow-hidden">
                                  <div className="tag fw-500">{item.tag}</div>
-                                 <div id={`carousel${item.carousel}`} className="carousel slide">
-                                    <div className="carousel-indicators">
-                                       <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                       <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                       <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                 {isLandType(item.property_type) ? (
+                                    <Link href="/listing_details_01" className="d-block">
+                                       <PropertyTypeVisual type={item.property_type as any} />
+                                    </Link>
+                                 ) : (
+                                    <div id={`carousel${item.carousel}`} className="carousel slide">
+                                       <div className="carousel-indicators">
+                                          <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target={`#carousel${item.carousel}`} data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                       </div>
+                                       <div className="carousel-inner">
+                                          {item.carousel_thumb.map((item, i) => (
+                                             <div key={i} className={`carousel-item ${item.active}`} data-bs-interval="1000000">
+                                                <Link href="/listing_details_01" className="d-block"><Image src={item.img} className="w-100" alt="..." /></Link>
+                                             </div>
+                                          ))}
+                                       </div>
                                     </div>
-                                    <div className="carousel-inner">
-                                       {item.carousel_thumb.map((item, i) => (
-                                          <div key={i} className={`carousel-item ${item.active}`} data-bs-interval="1000000">
-                                             <Link href="/listing_details_01" className="d-block"><Image src={item.img} className="w-100" alt="..." /></Link>
-                                          </div>
-                                       ))}
-                                    </div>
-                                 </div>
+                                 )}
                               </div>
                            </div>
                            <div className="property-info p-25">

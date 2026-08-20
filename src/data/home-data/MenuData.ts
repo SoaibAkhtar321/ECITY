@@ -75,5 +75,13 @@ const menu_data: MenuItem[] = [
             { link: "/blog_details", title: "Article" },
         ],
     },
+
+    {
+        id: 5,
+        has_dropdown: false,
+        title: "Sell Property",
+        class_name: "sell-property-nav-item",
+        link: "/sell-property",
+    },
 ];
 export default menu_data;

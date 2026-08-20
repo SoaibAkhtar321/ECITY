@@ -10,6 +10,9 @@ import Blog from "./Blog"
 import FAQ from "./FAQ"
 import FancyBannerTwo from "./FancyBannerTwo"
 import HeaderTwo from "@/layouts/headers/HeaderTwo"
+import FcityHowItWorks from "./FcityHowItWorks"
+import FcityMapIntelligence from "./FcityMapIntelligence"
+import FcityAIAdvisor from "./FcityAIAdvisor"
 
 const HomeTwo = () => {
   return (
@@ -18,8 +21,11 @@ const HomeTwo = () => {
       <HeroBanner />
       <FeedbackOne />
       <Property />
+      <FcityHowItWorks />
       <BLockFeatureOne />
       <FancyBannerOne />
+      <FcityMapIntelligence />
+      <FcityAIAdvisor />
       <BLockFeatureTwo />
       <FeedbackTwo />
       <Blog style={false} />
