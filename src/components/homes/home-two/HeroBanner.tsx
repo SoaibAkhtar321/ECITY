@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Link from "next/link";
 import DropdownTwo from "@/components/search-dropdown/home-dropdown/DropdownTwo";
+import { openFcityAI } from "@/utils/fcityAIBus";
 
 import titleShape from "@/assets/images/shape/shape_11.svg"
 import bannerImg_1 from "@/assets/images/assets/ils_03.png"
@@ -21,13 +22,18 @@ const HeroBanner = () => {
                         <p className="fs-24 color-dark pt-35 md-pt-30 pb-35 mb-pb-20 wow fadeInUp" data-wow-delay="0.1s">Discover verified land, plots, villas, apartments and commercial opportunities across Future City and Hyderabad&apos;s emerging southern corridors — guided by AI and backed by human expertise.</p>
                         <div className="d-inline-flex align-items-center flex-wrap">
                            <Link href="/listing_07" className="btn-seven mb-20 me-4 me-xxl5"><span>Explore Properties</span> <i className="bi bi-arrow-up-right"></i></Link>
-                           <Link href="/contact" className="video-icon tran3s d-flex align-items-center justify-content-center mb-20">
-                              <i className="fa-light fa-comment-dots"></i>
+                           <button
+                              type="button"
+                              onClick={() => openFcityAI()}
+                              style={{ cursor: "pointer" }}
+                              className="video-icon tran3s d-flex align-items-center justify-content-center mb-20 border-0 bg-transparent"
+                           >
+                              <i className="fa-light fa-sparkles"></i>
                               <div className="ps-3 text-start">
-                                 <span className="d-block">Talk to an</span>
-                                 <strong className="fs-20 color-dark fw-normal d-block">Advisor</strong>
+                                 <span className="d-block">Ask</span>
+                                 <strong className="fs-20 color-dark fw-normal d-block">FCITY AI</strong>
                               </div>
-                           </Link>
+                           </button>
                         </div>
                      </div>
                   </div>

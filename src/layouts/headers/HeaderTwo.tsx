@@ -7,6 +7,7 @@ import UseSticky from "@/hooks/UseSticky"
 import LoginModal from "@/modals/LoginModal"
 import Offcanvas from "./Menu/Offcanvas"
 import HeaderSearchbar from "./Menu/HeaderSearchbar"
+import { openFcityAI } from "@/utils/fcityAIBus"
 
 import logo_1 from "@/assets/images/logo/logo_02.svg";
 import logo_2 from "@/assets/images/logo/logo_04.svg";
@@ -37,9 +38,14 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
                                  Login <span className="d-none d-sm-inline-block"> {""} / Sign up</span></Link>
                            </li>
                               <li className="d-none d-md-inline-block ms-3 ms-xl-4 me-xl-4">
-                                 <Link href="/contact" className={style_1 ? "btn-ten" : "btn-two rounded-0"}>
-                                    <span>Talk to Advisor</span> <i className="fa-thin fa-arrow-up-right"></i>
-                                 </Link>
+                                 <button
+                                    type="button"
+                                    onClick={() => openFcityAI()}
+                                    style={{ cursor: "pointer" }}
+                                    className={style_1 ? "btn-ten" : "btn-two rounded-0"}
+                                 >
+                                    <span>Talk to FCITY AI</span> <i className="fa-thin fa-arrow-up-right"></i>
+                                 </button>
                               </li>
                               <li className="d-none d-xl-block">
                                  <button onClick={() => setOffCanvas(true)} style={{ cursor: "pointer" }} className="sidenavbtn rounded-circle tran3s" type="button">
