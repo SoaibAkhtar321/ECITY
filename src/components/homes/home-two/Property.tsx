@@ -11,8 +11,8 @@ const Property = () => {
          <div className="container">
             <div className="position-relative">
                <div className="title-one mb-25 lg-mb-20 wow fadeInUp">
-                  <h2 className="font-garamond">New Listings</h2>
-                  <p className="fs-22 mt-xs">Explore latest & featured properties for sale.</p>
+                  <h2 className="font-garamond">Featured Opportunities</h2>
+                  <p className="fs-22 mt-xs">Verified land, plots, villas, apartments and commercial listings across Hyderabad&apos;s growth corridors.</p>
                </div>
 
                <div className="row gx-xxl-5">
@@ -41,6 +41,14 @@ const Property = () => {
                            <div className="property-info p-25">
                               <Link href="#" className="title tran3s">{item.title}</Link>
                               <div className="address">{item.address}</div>
+                              {(item.verification_status || item.suitable_for) && (
+                                 <div className="fs-14 mt-1 mb-2">
+                                    {item.verification_status && <span className="fw-500" style={{ color: "#00B579" }}>✓ {item.verification_status}</span>}
+                                    {item.verification_status && item.trust_score && " · "}
+                                    {item.trust_score && <span>Trust Score {item.trust_score}</span>}
+                                    {item.suitable_for && <span className="d-block opacity-75">Suitable for: {item.suitable_for}</span>}
+                                 </div>
+                              )}
                               <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between pb-5">
                                  {item.property_info.map((info, index) => (
                                     <li key={index} className="d-flex align-items-center">
@@ -50,7 +58,7 @@ const Property = () => {
                                  ))}
                               </ul>
                               <div className="pl-footer top-border d-flex align-items-center justify-content-between">
-                                 <strong className="price fw-500 color-dark">${item.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>
+                                 <strong className="price fw-500 color-dark">₹{item.price.toLocaleString('en-IN')}{item.price_text ? ` ${item.price_text}` : ""}</strong>
                                  <Link href="#" className="btn-four"><i className="bi bi-arrow-up-right"></i></Link>
                               </div>
                            </div>

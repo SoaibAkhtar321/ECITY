@@ -2,7 +2,7 @@ import PricingTwo from "@/components/inner-pages/pricing/pricing-two";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Pricing Two HOZN - Real Estate React Next js ",
+   title: "FCITY.ai — Pricing Two",
 };
 const index = () => {
    return (

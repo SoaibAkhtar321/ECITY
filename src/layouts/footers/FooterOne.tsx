@@ -23,14 +23,15 @@ const FooterOne = ({ style }: any) => {
                                  <Image src={style ? footerLogo_2 : footerLogo_1} alt="" />
                               </Link>
                            </div>
-                           <p className="mb-60 lg-mb-40 md-mb-20">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
+                           <p className="mb-20 lg-mb-15 md-mb-10">Hyderabad, Telangana</p>
                            <h6>CONTACT</h6>
-                           <Link href="#" className={`email tran3s mb-70 lg-mb-50 ${style ? "font-garamond" : "fs-24 text-decoration-underline"}`}>Aljamal1stt@gmail.com</Link>
-                           <ul className="style-none d-flex align-items-center social-icon">
+                           <Link href="mailto:hello@fcity.ai" className={`email tran3s mb-40 lg-mb-30 ${style ? "font-garamond" : "fs-24 text-decoration-underline"}`}>hello@fcity.ai</Link>
+                           <ul className="style-none d-flex align-items-center social-icon mb-30">
                               {icon_1.map((icon, i) => (
                                  <li key={i}><Link href="#"><i className={`fa-brands fa${style ? "" : "-square"}-${icon}`}></i></Link></li>
                               ))}
                            </ul>
+                           <p className="fs-14 opacity-75 lh-md">FCITY.ai is a technology and facilitation platform. Buyers should independently verify original title documents and legal status before any transaction.</p>
                         </div>
                         {style && <Image src={footerShape_1} alt="" className="lazy-img shapes shape_01" />}
                      </div>

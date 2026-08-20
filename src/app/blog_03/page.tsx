@@ -2,7 +2,7 @@ import BlogThree from "@/components/blogs/blog-three";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Blog Three HOZN - Real Estate React Next js",
+   title: "FCITY.ai — Blog Three",
 };
 const index = () => {
    return (

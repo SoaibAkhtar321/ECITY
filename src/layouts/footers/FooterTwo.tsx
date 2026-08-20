@@ -21,7 +21,7 @@ interface ContentType {
 const footer_content: ContentType = {
    title: "Our Newsletter",
    desc_1: "Get instant news by subscribe to our newsletter",
-   desc_2: "11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt",
+   desc_2: "Hyderabad, Telangana",
    email: "Emile@gmail.com",
    number: "+210 0000-0000",
    icon: ["facebook-f", "twitter", "instagram"],
@@ -113,7 +113,7 @@ const FooterTwo = () => {
                      <li><Link href="/faq">Cookies</Link></li>
                      <li><Link href="/contact">Contact Us</Link></li>
                   </ul>
-                  <p className="mb-15 text-center text-lg-start order-md-first">Copyright @2025 HOZN.</p>
+                  <p className="mb-15 text-center text-lg-start order-md-first">Copyright @2025 FCITY.ai.</p>
                </div>
             </div>
          </div>

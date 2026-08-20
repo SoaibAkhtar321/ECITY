@@ -2,7 +2,7 @@ import ProjectTwo from "@/components/inner-pages/projects/project-two";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Project Two HOZN - Real Estate React Next js ",
+  title: "FCITY.ai — Project Two",
 };
 const index = () => {
   return (

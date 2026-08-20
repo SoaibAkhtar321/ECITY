@@ -1,0 +1,3429 @@
+diff --git a/public/assets/images/logo/logo_01.svg b/public/assets/images/logo/logo_01.svg
+index 206e3d1..19d9528 100644
+--- a/public/assets/images/logo/logo_01.svg
++++ b/public/assets/images/logo/logo_01.svg
+@@ -2,5 +2,5 @@
+ <circle cx="25" cy="25" r="25" fill="black"/>
+ <path d="M28.4762 34.2829H23.3395V25.8352C23.3395 24.4434 24.3733 21.9188 26.3763 21.9836C27.9787 22.0353 28.4439 23.5372 28.4762 24.2816V34.2829Z" fill="white"/>
+ <path d="M12 34.38V19.5884L18.5259 14.949L23.4041 11.4809L25.2352 10.1791C25.5705 9.94075 26.0194 9.94025 26.3552 10.1779L37.4672 18.0409C38.8386 19.0113 39.6541 20.5887 39.6541 22.2709V34.38H35.1959C34.161 34.38 33.3221 33.5395 33.3221 32.5027V22.8575C33.3221 20.2655 31.2248 18.1643 28.6377 18.1643C26.6166 18.1643 24.7054 19.0864 23.4453 20.6695L23.4041 20.7212V11.4809L18.5259 14.949L18.3782 32.7109C18.3705 33.635 17.6207 34.38 16.6983 34.38H12Z" fill="white"/>
+-<text x="60" y="38" font-size="30" font-family="Nunito, sans-serif" font-weight="800" fill="black">HOZN</text>
++<text x="60" y="38" font-size="30" font-family="Nunito, sans-serif" font-weight="800" fill="black">FCITY</text>
+ </svg>
+diff --git a/public/assets/images/logo/logo_02.svg b/public/assets/images/logo/logo_02.svg
+index c76c6e4..ecb294d 100644
+--- a/public/assets/images/logo/logo_02.svg
++++ b/public/assets/images/logo/logo_02.svg
+@@ -5,6 +5,6 @@
+ <g mask="url(#mask0_17_30)">
+ <path d="M21.531 30.259H15.1302V19.7323C15.1302 17.998 16.4184 14.8521 18.9143 14.9327C20.9111 14.9973 21.4908 16.8687 21.531 17.7963V30.259Z" fill="black"/>
+ <path d="M1 30.38V11.9482L9.13189 6.16695L15.2107 1.84535L17.4924 0.223195C17.9102 -0.0738319 18.4696 -0.0744495 18.8881 0.221655L32.7347 10.0198C34.4437 11.2291 35.4599 13.1946 35.4599 15.2908V30.38H29.9044C28.6149 30.38 27.5695 29.3327 27.5695 28.0407V16.0217C27.5695 12.7919 24.9561 10.1735 21.7323 10.1735C19.2138 10.1735 16.8323 11.3226 15.262 13.2953L15.2107 13.3598V1.84535L9.13189 6.16695L8.94789 28.3002C8.93832 29.4516 8.00394 30.38 6.85461 30.38H1Z" fill="black"/>
+-<text x="45" y="28" font-size="25" font-family="Nunito, sans-serif" font-weight="800" fill="black">HOZN</text>
++<text x="45" y="28" font-size="25" font-family="Nunito, sans-serif" font-weight="800" fill="black">FCITY</text>
+ </g>
+ </svg>
+diff --git a/public/assets/images/logo/logo_04.svg b/public/assets/images/logo/logo_04.svg
+index 33563e1..64b59bb 100644
+--- a/public/assets/images/logo/logo_04.svg
++++ b/public/assets/images/logo/logo_04.svg
+@@ -5,6 +5,6 @@
+ <g mask="url(#mask0_115_31)">
+ <path d="M37.531 30.259H31.1302V19.7323C31.1302 17.998 32.4184 14.8521 34.9143 14.9327C36.9111 14.9973 37.4908 16.8687 37.531 17.7963V30.259Z" fill="#161616"/>
+ <path d="M17 30.38V11.9482L25.1319 6.16695L31.2107 1.84535L33.4924 0.223195C33.9102 -0.0738319 34.4696 -0.0744495 34.8881 0.221655L48.7347 10.0198C50.4437 11.2291 51.4599 13.1946 51.4599 15.2908V30.38H45.9044C44.6149 30.38 43.5695 29.3327 43.5695 28.0407V16.0217C43.5695 12.7919 40.9561 10.1735 37.7323 10.1735C35.2138 10.1735 32.8323 11.3226 31.262 13.2953L31.2107 13.3598V1.84535L25.1319 6.16695L24.9479 28.3002C24.9383 29.4516 24.0039 30.38 22.8546 30.38H17Z" fill="#161616"/>
+-<text x="-1" y="55" font-size="22" font-family="Nunito, sans-serif" font-weight="800" fill="#161616">HOZN</text>
++<text x="-1" y="55" font-size="22" font-family="Nunito, sans-serif" font-weight="800" fill="#161616">FCITY</text>
+ </g>
+ </svg>
+diff --git a/src/app/[...not-found]/page.tsx b/src/app/[...not-found]/page.tsx
+index 5eba0fa..c43bf47 100644
+--- a/src/app/[...not-found]/page.tsx
++++ b/src/app/[...not-found]/page.tsx
+@@ -2,7 +2,7 @@ import Error from "@/components/inner-pages/error";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "404 error || HOZN - Real Estate React Next js",
++   title: "FCITY.ai — 404 error ||",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/about_us_01/page.tsx b/src/app/about_us_01/page.tsx
+index b476a5f..94c44c6 100644
+--- a/src/app/about_us_01/page.tsx
++++ b/src/app/about_us_01/page.tsx
+@@ -2,7 +2,7 @@ import AboutUsOne from "@/components/inner-pages/about-us/about-us-one";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "About Us One HOZN - Real Estate React Next js",
++   title: "FCITY.ai — About Us One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/about_us_02/page.tsx b/src/app/about_us_02/page.tsx
+index b2bd790..f254b78 100644
+--- a/src/app/about_us_02/page.tsx
++++ b/src/app/about_us_02/page.tsx
+@@ -2,7 +2,7 @@ import AboutUsTwo from "@/components/inner-pages/about-us/about-us-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "About Us Two HOZN - Real Estate React Next js",
++   title: "FCITY.ai — About Us Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/agency/page.tsx b/src/app/agency/page.tsx
+index 09b5a1c..c37d72e 100644
+--- a/src/app/agency/page.tsx
++++ b/src/app/agency/page.tsx
+@@ -2,7 +2,7 @@ import Agency from "@/components/inner-pages/agency/agency";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Agency HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Agency",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/agency_details/page.tsx b/src/app/agency_details/page.tsx
+index 22e62b6..aaef1c8 100644
+--- a/src/app/agency_details/page.tsx
++++ b/src/app/agency_details/page.tsx
+@@ -2,7 +2,7 @@ import AgencyDetails from "@/components/inner-pages/agency/agency-details";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Agency Details HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Agency Details",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/agent/page.tsx b/src/app/agent/page.tsx
+index 6bc27e3..50fb2b0 100644
+--- a/src/app/agent/page.tsx
++++ b/src/app/agent/page.tsx
+@@ -2,7 +2,7 @@ import Agent from "@/components/inner-pages/agent/agent";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Agent HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Agent",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/agent_details/page.tsx b/src/app/agent_details/page.tsx
+index 96fe2f9..b763192 100644
+--- a/src/app/agent_details/page.tsx
++++ b/src/app/agent_details/page.tsx
+@@ -2,7 +2,7 @@ import AgentDetails from "@/components/inner-pages/agent/agent-details";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Agent Details HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Agent Details",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/blog_01/page.tsx b/src/app/blog_01/page.tsx
+index fb2db7e..40ad869 100644
+--- a/src/app/blog_01/page.tsx
++++ b/src/app/blog_01/page.tsx
+@@ -2,7 +2,7 @@ import BlogOne from "@/components/blogs/blog-one";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Blog One HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Blog One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/blog_02/page.tsx b/src/app/blog_02/page.tsx
+index a6cece7..a4d9579 100644
+--- a/src/app/blog_02/page.tsx
++++ b/src/app/blog_02/page.tsx
+@@ -2,7 +2,7 @@ import BlogTwo from "@/components/blogs/blog-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Blog Two HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Blog Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/blog_03/page.tsx b/src/app/blog_03/page.tsx
+index 238d73d..b163a52 100644
+--- a/src/app/blog_03/page.tsx
++++ b/src/app/blog_03/page.tsx
+@@ -2,7 +2,7 @@ import BlogThree from "@/components/blogs/blog-three";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Blog Three HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Blog Three",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/blog_details/page.tsx b/src/app/blog_details/page.tsx
+index a81edb5..00258d1 100644
+--- a/src/app/blog_details/page.tsx
++++ b/src/app/blog_details/page.tsx
+@@ -2,7 +2,7 @@ import BlogDetails from "@/components/blogs/blog-details";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Blog Details HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Blog Details",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/compare/page.tsx b/src/app/compare/page.tsx
+index 95636b0..5a66769 100644
+--- a/src/app/compare/page.tsx
++++ b/src/app/compare/page.tsx
+@@ -2,7 +2,7 @@ import Compare from "@/components/inner-pages/compare";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Compare HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Compare",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/contact/page.tsx b/src/app/contact/page.tsx
+index 6b8e762..5a68787 100644
+--- a/src/app/contact/page.tsx
++++ b/src/app/contact/page.tsx
+@@ -2,7 +2,7 @@ import Contact from "@/components/inner-pages/contact";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Contact HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Contact",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/account-settings/page.tsx b/src/app/dashboard/account-settings/page.tsx
+index db1f0e8..d82875c 100644
+--- a/src/app/dashboard/account-settings/page.tsx
++++ b/src/app/dashboard/account-settings/page.tsx
+@@ -2,7 +2,7 @@ import DashboardAccountSetting from "@/components/dashboard/account-settings";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Account Setting HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Account Setting",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/account-settings/password-change/page.tsx b/src/app/dashboard/account-settings/password-change/page.tsx
+index 7164790..f79eb24 100644
+--- a/src/app/dashboard/account-settings/password-change/page.tsx
++++ b/src/app/dashboard/account-settings/password-change/page.tsx
+@@ -2,7 +2,7 @@ import PasswordChange from "@/components/dashboard/account-settings/password-cha
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Account Password Change HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Account Password Change",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/add-property/page.tsx b/src/app/dashboard/add-property/page.tsx
+index 2b6c4b7..4236c5a 100644
+--- a/src/app/dashboard/add-property/page.tsx
++++ b/src/app/dashboard/add-property/page.tsx
+@@ -2,7 +2,7 @@ import DashboardAddProperty from "@/components/dashboard/add-property";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Add Property HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Add Property",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/dashboard-index/page.tsx b/src/app/dashboard/dashboard-index/page.tsx
+index 8c8393d..81ed08c 100644
+--- a/src/app/dashboard/dashboard-index/page.tsx
++++ b/src/app/dashboard/dashboard-index/page.tsx
+@@ -2,7 +2,7 @@ import DashboardIndex from "@/components/dashboard/index";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Index HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Index",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/favourites/page.tsx b/src/app/dashboard/favourites/page.tsx
+index 9030f53..19dd7f6 100644
+--- a/src/app/dashboard/favourites/page.tsx
++++ b/src/app/dashboard/favourites/page.tsx
+@@ -2,7 +2,7 @@ import DashboardFavourite from "@/components/dashboard/favourites";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Favourite HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Favourite",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/membership/page.tsx b/src/app/dashboard/membership/page.tsx
+index c0f7994..2309ac9 100644
+--- a/src/app/dashboard/membership/page.tsx
++++ b/src/app/dashboard/membership/page.tsx
+@@ -2,7 +2,7 @@ import DashboardMembership from "@/components/dashboard/membership";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Membership HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Membership",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/message/page.tsx b/src/app/dashboard/message/page.tsx
+index 9f9657b..c82f97a 100644
+--- a/src/app/dashboard/message/page.tsx
++++ b/src/app/dashboard/message/page.tsx
+@@ -2,7 +2,7 @@ import DashboardMessage from "@/components/dashboard/message";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Message HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Message",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/profile/page.tsx b/src/app/dashboard/profile/page.tsx
+index edd25ca..dce279d 100644
+--- a/src/app/dashboard/profile/page.tsx
++++ b/src/app/dashboard/profile/page.tsx
+@@ -2,7 +2,7 @@ import DashboardProfile from "@/components/dashboard/profile";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Profile HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Profile",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/properties-list/page.tsx b/src/app/dashboard/properties-list/page.tsx
+index 6f227c6..ee0e2e0 100644
+--- a/src/app/dashboard/properties-list/page.tsx
++++ b/src/app/dashboard/properties-list/page.tsx
+@@ -2,7 +2,7 @@ import PropertyList from "@/components/dashboard/properties-list";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Property List HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Property List",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/review/page.tsx b/src/app/dashboard/review/page.tsx
+index 4e9da22..6ba1cf2 100644
+--- a/src/app/dashboard/review/page.tsx
++++ b/src/app/dashboard/review/page.tsx
+@@ -2,7 +2,7 @@ import DashboardReview from "@/components/dashboard/review";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Review HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Review",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/dashboard/saved-search/page.tsx b/src/app/dashboard/saved-search/page.tsx
+index 9a235fe..3bbcf5b 100644
+--- a/src/app/dashboard/saved-search/page.tsx
++++ b/src/app/dashboard/saved-search/page.tsx
+@@ -2,7 +2,7 @@ import DashboardSavedSearch from "@/components/dashboard/saved-search";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Dashboard Saved Search HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Dashboard Saved Search",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/faq/page.tsx b/src/app/faq/page.tsx
+index a747218..9a7083b 100644
+--- a/src/app/faq/page.tsx
++++ b/src/app/faq/page.tsx
+@@ -2,7 +2,7 @@ import Faq from "@/components/inner-pages/faq";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Faq HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Faq",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/home-two/page.tsx b/src/app/home-two/page.tsx
+index cc6415b..eb79915 100644
+--- a/src/app/home-two/page.tsx
++++ b/src/app/home-two/page.tsx
+@@ -2,7 +2,7 @@ import HomeTwo from "@/components/homes/home-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-  title: "Home Two HOZN - Real Estate React Next js",
++  title: "FCITY.ai — Home Two",
+ };
+ const index = () => {
+   return (
+diff --git a/src/app/layout.tsx b/src/app/layout.tsx
+index a367dd8..2a4a424 100644
+--- a/src/app/layout.tsx
++++ b/src/app/layout.tsx
+@@ -14,12 +14,12 @@ export default function RootLayout({
+   return (
+     <html lang="en" suppressHydrationWarning={isDev}>
+       <head>
+-        <meta name="keywords" content="Real estate, Property sale, Property buy" />
+-        <meta name="description" content="HOZN is a beautiful website designed for Real Estate Agency." />
+-        <meta property="og:site_name" content="HOZN" />
+-        <meta property="og:url" content="https://creativegigstf.com" />
++        <meta name="keywords" content="Hyderabad real estate, Future City, land advisory, plots, villas, apartments, commercial property, corporate land, AI property platform" />
++        <meta name="description" content="FCITY.ai is Hyderabad's AI-powered land and property advisory platform, connecting landowners, developers and buyers across Future City and the southern growth corridors." />
++        <meta property="og:site_name" content="FCITY.ai" />
++        <meta property="og:url" content="https://fcity.ai" />
+         <meta property="og:type" content="website" />
+-        <meta property="og:title" content="HOZN - Real Estate React Next js" />
++        <meta property="og:title" content="FCITY.ai — Hyderabad's AI-Powered Land & Property Advisory Platform" />
+         <meta name='og:image' content='images/assets/ogg.png' />
+         {/* For IE  */}
+         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+diff --git a/src/app/listing_01/page.tsx b/src/app/listing_01/page.tsx
+index 945528a..f3bea1f 100644
+--- a/src/app/listing_01/page.tsx
++++ b/src/app/listing_01/page.tsx
+@@ -2,7 +2,7 @@ import ListingOne from "@/components/inner-listing/listing-01";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing One HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Listing One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_02/page.tsx b/src/app/listing_02/page.tsx
+index 3f8f527..8e073fa 100644
+--- a/src/app/listing_02/page.tsx
++++ b/src/app/listing_02/page.tsx
+@@ -2,7 +2,7 @@ import ListingTwo from "@/components/inner-listing/listing-02";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Two HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Listing Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_03/page.tsx b/src/app/listing_03/page.tsx
+index a56e986..bfc9057 100644
+--- a/src/app/listing_03/page.tsx
++++ b/src/app/listing_03/page.tsx
+@@ -2,7 +2,7 @@ import ListingThree from "@/components/inner-listing/listing-03";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Three HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Listing Three",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_04/page.tsx b/src/app/listing_04/page.tsx
+index e83b686..45b8be2 100644
+--- a/src/app/listing_04/page.tsx
++++ b/src/app/listing_04/page.tsx
+@@ -2,7 +2,7 @@ import ListingFour from "@/components/inner-listing/listing-04";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Four HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Listing Four",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_05/page.tsx b/src/app/listing_05/page.tsx
+index c3f8275..507cc52 100644
+--- a/src/app/listing_05/page.tsx
++++ b/src/app/listing_05/page.tsx
+@@ -2,7 +2,7 @@ import ListingFive from "@/components/inner-listing/listing-05";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Five HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Five",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_06/page.tsx b/src/app/listing_06/page.tsx
+index 7df81f1..d0a1e1d 100644
+--- a/src/app/listing_06/page.tsx
++++ b/src/app/listing_06/page.tsx
+@@ -2,7 +2,7 @@ import ListingSix from "@/components/inner-listing/listing-06";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Six HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Six",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_07/page.tsx b/src/app/listing_07/page.tsx
+index c6a8f99..b43add7 100644
+--- a/src/app/listing_07/page.tsx
++++ b/src/app/listing_07/page.tsx
+@@ -2,7 +2,7 @@ import ListingSeven from "@/components/inner-listing/listing-07";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Seven HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Seven",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_08/page.tsx b/src/app/listing_08/page.tsx
+index 81b3ba8..9ab81b7 100644
+--- a/src/app/listing_08/page.tsx
++++ b/src/app/listing_08/page.tsx
+@@ -2,7 +2,7 @@ import ListingEight from "@/components/inner-listing/listing-08";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Eight HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Eight",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_09/page.tsx b/src/app/listing_09/page.tsx
+index 919db8b..5543d95 100644
+--- a/src/app/listing_09/page.tsx
++++ b/src/app/listing_09/page.tsx
+@@ -2,7 +2,7 @@ import ListingNine from "@/components/inner-listing/listing-09";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Nine HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Nine",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_10/page.tsx b/src/app/listing_10/page.tsx
+index f7c7d37..7833263 100644
+--- a/src/app/listing_10/page.tsx
++++ b/src/app/listing_10/page.tsx
+@@ -2,7 +2,7 @@ import ListingTen from "@/components/inner-listing/listing-10";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Ten HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Ten",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_11/page.tsx b/src/app/listing_11/page.tsx
+index 451f5ee..1fd38dc 100644
+--- a/src/app/listing_11/page.tsx
++++ b/src/app/listing_11/page.tsx
+@@ -2,7 +2,7 @@ import ListingEleven from "@/components/inner-listing/listing-11";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Eleven HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Eleven",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_12/page.tsx b/src/app/listing_12/page.tsx
+index 6187c16..100b50f 100644
+--- a/src/app/listing_12/page.tsx
++++ b/src/app/listing_12/page.tsx
+@@ -2,7 +2,7 @@ import ListingTwelve from "@/components/inner-listing/listing-12";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Twelve HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Twelve",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_13/page.tsx b/src/app/listing_13/page.tsx
+index dd1d04b..150d82d 100644
+--- a/src/app/listing_13/page.tsx
++++ b/src/app/listing_13/page.tsx
+@@ -2,7 +2,7 @@ import ListingThirteen from "@/components/inner-listing/listing-13";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Thirteen HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Thirteen",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_14/page.tsx b/src/app/listing_14/page.tsx
+index 8aec733..2e764e2 100644
+--- a/src/app/listing_14/page.tsx
++++ b/src/app/listing_14/page.tsx
+@@ -2,7 +2,7 @@ import ListingFourteen from "@/components/inner-listing/listing-14";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Fourteen HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Fourteen",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_15/page.tsx b/src/app/listing_15/page.tsx
+index 9621e30..62192b6 100644
+--- a/src/app/listing_15/page.tsx
++++ b/src/app/listing_15/page.tsx
+@@ -2,7 +2,7 @@ import ListingFifteen from "@/components/inner-listing/listing-15";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Fifteen HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Fifteen",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_16/page.tsx b/src/app/listing_16/page.tsx
+index 65a4073..fea0fc7 100644
+--- a/src/app/listing_16/page.tsx
++++ b/src/app/listing_16/page.tsx
+@@ -2,7 +2,7 @@ import ListingSixteen from "@/components/inner-listing/listing-16";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Sixteen HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Sixteen",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_17/page.tsx b/src/app/listing_17/page.tsx
+index 60cec85..d1b217c 100644
+--- a/src/app/listing_17/page.tsx
++++ b/src/app/listing_17/page.tsx
+@@ -2,7 +2,7 @@ import ListingSeventeen from "@/components/inner-listing/listing-17";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Seventeen HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Seventeen",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_01/page.tsx b/src/app/listing_details_01/page.tsx
+index 08ac648..35ea749 100644
+--- a/src/app/listing_details_01/page.tsx
++++ b/src/app/listing_details_01/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsOne from "@/components/ListingDetails/listing-details-1";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details One HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Details One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_02/page.tsx b/src/app/listing_details_02/page.tsx
+index 133932c..a72b285 100644
+--- a/src/app/listing_details_02/page.tsx
++++ b/src/app/listing_details_02/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsTwo from "@/components/ListingDetails/listing-details-2";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details Two HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Details Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_03/page.tsx b/src/app/listing_details_03/page.tsx
+index c2e5fa9..524dfe3 100644
+--- a/src/app/listing_details_03/page.tsx
++++ b/src/app/listing_details_03/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsThree from "@/components/ListingDetails/listing-details-3";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details Three HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Details Three",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_04/page.tsx b/src/app/listing_details_04/page.tsx
+index d29fcfb..5ee1449 100644
+--- a/src/app/listing_details_04/page.tsx
++++ b/src/app/listing_details_04/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsFour from "@/components/ListingDetails/listing-details-4";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details Four HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Details Four",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_05/page.tsx b/src/app/listing_details_05/page.tsx
+index 798a093..94448a0 100644
+--- a/src/app/listing_details_05/page.tsx
++++ b/src/app/listing_details_05/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsFive from "@/components/ListingDetails/listing-details-5";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details Five HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Listing Details Five",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/listing_details_06/page.tsx b/src/app/listing_details_06/page.tsx
+index 029c4fc..6e934d2 100644
+--- a/src/app/listing_details_06/page.tsx
++++ b/src/app/listing_details_06/page.tsx
+@@ -2,7 +2,7 @@ import ListingDetailsSix from "@/components/ListingDetails/listing-details-6";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Listing Details Six HOZN - Real Estate React Next js",
++   title: "FCITY.ai — Listing Details Six",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+index f3dc748..bb9ef3e 100644
+--- a/src/app/page.tsx
++++ b/src/app/page.tsx
+@@ -2,7 +2,7 @@
+ import Wrapper from "@/layouts/Wrapper";
+ import HomeTwo from "@/components/homes/home-two";
+ export const metadata = {
+-  title: "HOZN - Real Estate React Next js",
++  title: "FCITY.ai — Hyderabad Property Advisory",
+ };
+ const index = () => {
+   return (
+diff --git a/src/app/pricing_01/page.tsx b/src/app/pricing_01/page.tsx
+index d956b5b..aa80cc6 100644
+--- a/src/app/pricing_01/page.tsx
++++ b/src/app/pricing_01/page.tsx
+@@ -2,7 +2,7 @@ import PricingOne from "@/components/inner-pages/pricing/pricing-one";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Pricing One HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Pricing One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/pricing_02/page.tsx b/src/app/pricing_02/page.tsx
+index 35e081a..b7865fe 100644
+--- a/src/app/pricing_02/page.tsx
++++ b/src/app/pricing_02/page.tsx
+@@ -2,7 +2,7 @@ import PricingTwo from "@/components/inner-pages/pricing/pricing-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Pricing Two HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Pricing Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/project_01/page.tsx b/src/app/project_01/page.tsx
+index 6977fb3..37a62bf 100644
+--- a/src/app/project_01/page.tsx
++++ b/src/app/project_01/page.tsx
+@@ -2,7 +2,7 @@ import ProjectOne from "@/components/inner-pages/projects/project-one";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-  title: "Project One HOZN - Real Estate React Next js ",
++  title: "FCITY.ai — Project One",
+ };
+ const index = () => {
+   return (
+diff --git a/src/app/project_02/page.tsx b/src/app/project_02/page.tsx
+index 707541b..75d843a 100644
+--- a/src/app/project_02/page.tsx
++++ b/src/app/project_02/page.tsx
+@@ -2,7 +2,7 @@ import ProjectTwo from "@/components/inner-pages/projects/project-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-  title: "Project Two HOZN - Real Estate React Next js ",
++  title: "FCITY.ai — Project Two",
+ };
+ const index = () => {
+   return (
+diff --git a/src/app/project_03/page.tsx b/src/app/project_03/page.tsx
+index 2a9244f..7ff086f 100644
+--- a/src/app/project_03/page.tsx
++++ b/src/app/project_03/page.tsx
+@@ -2,7 +2,7 @@ import ProjectThree from "@/components/inner-pages/projects/project-three";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Project Three HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Project Three",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/project_04/page.tsx b/src/app/project_04/page.tsx
+index a0feccd..324a3c9 100644
+--- a/src/app/project_04/page.tsx
++++ b/src/app/project_04/page.tsx
+@@ -2,7 +2,7 @@ import ProjectFour from "@/components/inner-pages/projects/project-four";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Project Four HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Project Four",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/project_details_01/page.tsx b/src/app/project_details_01/page.tsx
+index c8125bb..f718989 100644
+--- a/src/app/project_details_01/page.tsx
++++ b/src/app/project_details_01/page.tsx
+@@ -2,7 +2,7 @@ import ProjectDetails from "@/components/inner-pages/projects/project-details";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Project Details HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Project Details",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/service_01/page.tsx b/src/app/service_01/page.tsx
+index ce92b10..deadd30 100644
+--- a/src/app/service_01/page.tsx
++++ b/src/app/service_01/page.tsx
+@@ -2,7 +2,7 @@ import ServiceOne from "@/components/inner-pages/services/service-one";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Service One HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Service One",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/service_02/page.tsx b/src/app/service_02/page.tsx
+index 090dd31..0a926ef 100644
+--- a/src/app/service_02/page.tsx
++++ b/src/app/service_02/page.tsx
+@@ -2,7 +2,7 @@ import ServiceTwo from "@/components/inner-pages/services/service-two";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Service Two HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Service Two",
+ };
+ const index = () => {
+    return (
+diff --git a/src/app/service_details/page.tsx b/src/app/service_details/page.tsx
+index d15f305..68cb846 100644
+--- a/src/app/service_details/page.tsx
++++ b/src/app/service_details/page.tsx
+@@ -2,7 +2,7 @@ import ServiceDetails from "@/components/inner-pages/services/service-details";
+ import Wrapper from "@/layouts/Wrapper";
+ 
+ export const metadata = {
+-   title: "Service Details HOZN - Real Estate React Next js ",
++   title: "FCITY.ai — Service Details",
+ };
+ const index = () => {
+    return (
+diff --git a/src/components/homes/home-five/BLockFeatureFour.tsx b/src/components/homes/home-five/BLockFeatureFour.tsx
+index af0d957..98b2382 100644
+--- a/src/components/homes/home-five/BLockFeatureFour.tsx
++++ b/src/components/homes/home-five/BLockFeatureFour.tsx
+@@ -18,8 +18,8 @@ const BLockFeatureFour = () => {
+                         <div className="d-flex align-items-center mt-75 md-mt-50">
+                            <Image src={featureImg_1} alt="" className="rounded-circle avatar" />
+                            <div className="ps-4">
+-                              <h6 className="fs-22 mb-5">Ahmad Aljamal.</h6>
+-                              <span className="opacity-75">CEO & Head of HOZN Inc</span>
++                              <h6 className="fs-22 mb-5">Rajesh Reddy.</h6>
++                              <span className="opacity-75">Investor, Mucherla</span>
+                            </div>
+                         </div>
+                      </div>
+diff --git a/src/components/homes/home-four/AddressBanner.tsx b/src/components/homes/home-four/AddressBanner.tsx
+index 416c437..1c04ff8 100644
+--- a/src/components/homes/home-four/AddressBanner.tsx
++++ b/src/components/homes/home-four/AddressBanner.tsx
+@@ -27,7 +27,7 @@ const address_data: DataType[] = [
+    {
+       id: 3,
+       title: "Live chat",
+-      address_1: "www.HOZNlivechat.com"
++      address_1: "www.fcity.ai"
+    },
+ ]
+ 
+diff --git a/src/components/homes/home-one/BLockFeatureOne.tsx b/src/components/homes/home-one/BLockFeatureOne.tsx
+index ffe47f1..22bb7c7 100644
+--- a/src/components/homes/home-one/BLockFeatureOne.tsx
++++ b/src/components/homes/home-one/BLockFeatureOne.tsx
+@@ -8,7 +8,7 @@ const BLockFeatureOne = () => {
+       <div className="block-feature-one mt-130 xl-mt-100 lg-mt-80 mb-150 xl-mb-100 lg-mb-80">
+          <div className="container">
+             <div className="title-one text-center mb-50 xl-mb-30 lg-mb-20 wow fadeInUp">
+-               <h3>Unlock HOZN&apos;s <span>advantages <Image src={titleShape} alt="" className="lazy-img" /></span></h3>
++               <h3>Unlock FCITY.ai&apos;s <span>advantages <Image src={titleShape} alt="" className="lazy-img" /></span></h3>
+                <p className="fs-24">Your trusted real estate partner in every transaction.</p>
+             </div>
+ 
+diff --git a/src/components/homes/home-two/FeedbackOne.tsx b/src/components/homes/home-two/FeedbackOne.tsx
+index b772e06..0107851 100644
+--- a/src/components/homes/home-two/FeedbackOne.tsx
++++ b/src/components/homes/home-two/FeedbackOne.tsx
+@@ -17,8 +17,8 @@ const Feedback = () => {
+                         <div className="d-flex align-items-center mt-75 md-mt-60">
+                            <Image src={feedbackAvatar} alt="" className="rounded-circle avatar" />
+                            <div className="ps-4">
+-                              <h6 className="fs-22 text-white fw-normal mb-5">Ahmad Aljamal.</h6>
+-                              <span className="text-white opacity-50 fw-light">CEO & Head of HOZN Inc</span>
++                              <h6 className="fs-22 text-white fw-normal mb-5">Rajesh Reddy.</h6>
++                              <span className="text-white opacity-50 fw-light">Investor, Mucherla</span>
+                            </div>
+                         </div>
+                      </div>
+diff --git a/src/components/homes/home-two/HeroBanner.tsx b/src/components/homes/home-two/HeroBanner.tsx
+index 7200311..92535e6 100644
+--- a/src/components/homes/home-two/HeroBanner.tsx
++++ b/src/components/homes/home-two/HeroBanner.tsx
+@@ -1,8 +1,6 @@
+ "use client"
+ import Image from "next/image"
+ import Link from "next/link";
+-import { useState } from "react";
+-import VideoPopup from "@/modals/VideoPopup";
+ import DropdownTwo from "@/components/search-dropdown/home-dropdown/DropdownTwo";
+ 
+ import titleShape from "@/assets/images/shape/shape_11.svg"
+@@ -12,8 +10,6 @@ import bannerImg_3 from "@/assets/images/assets/badge_01.svg"
+ 
+ const HeroBanner = () => {
+ 
+-   const [isVideoOpen, setIsVideoOpen] = useState(false);
+-
+    return (
+       <>
+          <div className="hero-banner-two z-1 position-relative">
+@@ -21,17 +17,17 @@ const HeroBanner = () => {
+                <div className="position-relative line-bg pt-200 md-pt-150 pb-130 xl-pb-100">
+                   <div className="row">
+                      <div className="col-xxl-9 col-xl-8 col-lg-9 col-md-10">
+-                        <h1 className="hero-heading font-garamond wow fadeInUp">Find the right home for your family <span><Image src={titleShape} alt="" className="lazy-img icon d-inline-block" /></span></h1>
+-                        <p className="fs-24 color-dark pt-35 md-pt-30 pb-35 mb-pb-20 wow fadeInUp" data-wow-delay="0.1s">We’ve more than 745,000 apartments, place & plot.</p>
++                        <h1 className="hero-heading font-garamond wow fadeInUp">The next city is being built <span><Image src={titleShape} alt="" className="lazy-img icon d-inline-block" /></span></h1>
++                        <p className="fs-24 color-dark pt-35 md-pt-30 pb-35 mb-pb-20 wow fadeInUp" data-wow-delay="0.1s">Discover verified land, plots, villas, apartments and commercial opportunities across Future City and Hyderabad&apos;s emerging southern corridors — guided by AI and backed by human expertise.</p>
+                         <div className="d-inline-flex align-items-center flex-wrap">
+-                           <Link href="/listing_07" className="btn-seven mb-20 me-4 me-xxl5"><span>Explore All listing</span> <i className="bi bi-arrow-up-right"></i></Link>
+-                           <a onClick={() => setIsVideoOpen(true)} style={{ cursor: "pointer" }} className="video-icon tran3s d-flex align-items-center justify-content-center mb-20">
+-                              <i className="fa-light fa-play"></i>
++                           <Link href="/listing_07" className="btn-seven mb-20 me-4 me-xxl5"><span>Explore Properties</span> <i className="bi bi-arrow-up-right"></i></Link>
++                           <Link href="/contact" className="video-icon tran3s d-flex align-items-center justify-content-center mb-20">
++                              <i className="fa-light fa-comment-dots"></i>
+                               <div className="ps-3 text-start">
+-                                 <span className="d-block">Watch</span>
+-                                 <strong className="fs-20 color-dark fw-normal d-block">Intro video</strong>
++                                 <span className="d-block">Talk to an</span>
++                                 <strong className="fs-20 color-dark fw-normal d-block">Advisor</strong>
+                               </div>
+-                           </a>
++                           </Link>
+                         </div>
+                      </div>
+                   </div>
+@@ -43,13 +39,6 @@ const HeroBanner = () => {
+             <Image src={bannerImg_2} alt="" className="lazy-img shapes shape_01" />
+             <Image src={bannerImg_3} alt="" className="lazy-img shapes shape_02" />
+          </div>
+-         {/* video modal start */}
+-         <VideoPopup
+-            isVideoOpen={isVideoOpen}
+-            setIsVideoOpen={setIsVideoOpen}
+-            videoId={"tUP5S4YdEJo"}
+-         />
+-         {/* video modal end */}
+       </>
+    )
+ }
+diff --git a/src/components/homes/home-two/Property.tsx b/src/components/homes/home-two/Property.tsx
+index e7d6c6b..864b9af 100644
+--- a/src/components/homes/home-two/Property.tsx
++++ b/src/components/homes/home-two/Property.tsx
+@@ -11,8 +11,8 @@ const Property = () => {
+          <div className="container">
+             <div className="position-relative">
+                <div className="title-one mb-25 lg-mb-20 wow fadeInUp">
+-                  <h2 className="font-garamond">New Listings</h2>
+-                  <p className="fs-22 mt-xs">Explore latest & featured properties for sale.</p>
++                  <h2 className="font-garamond">Featured Opportunities</h2>
++                  <p className="fs-22 mt-xs">Verified land, plots, villas, apartments and commercial listings across Hyderabad&apos;s growth corridors.</p>
+                </div>
+ 
+                <div className="row gx-xxl-5">
+@@ -41,6 +41,14 @@ const Property = () => {
+                            <div className="property-info p-25">
+                               <Link href="#" className="title tran3s">{item.title}</Link>
+                               <div className="address">{item.address}</div>
++                              {(item.verification_status || item.suitable_for) && (
++                                 <div className="fs-14 mt-1 mb-2">
++                                    {item.verification_status && <span className="fw-500" style={{ color: "#00B579" }}>✓ {item.verification_status}</span>}
++                                    {item.verification_status && item.trust_score && " · "}
++                                    {item.trust_score && <span>Trust Score {item.trust_score}</span>}
++                                    {item.suitable_for && <span className="d-block opacity-75">Suitable for: {item.suitable_for}</span>}
++                                 </div>
++                              )}
+                               <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between pb-5">
+                                  {item.property_info.map((info, index) => (
+                                     <li key={index} className="d-flex align-items-center">
+@@ -50,7 +58,7 @@ const Property = () => {
+                                  ))}
+                               </ul>
+                               <div className="pl-footer top-border d-flex align-items-center justify-content-between">
+-                                 <strong className="price fw-500 color-dark">${item.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>
++                                 <strong className="price fw-500 color-dark">₹{item.price.toLocaleString('en-IN')}{item.price_text ? ` ${item.price_text}` : ""}</strong>
+                                  <Link href="#" className="btn-four"><i className="bi bi-arrow-up-right"></i></Link>
+                               </div>
+                            </div>
+diff --git a/src/components/inner-pages/contact/ContactArea.tsx b/src/components/inner-pages/contact/ContactArea.tsx
+index 1ef4558..1361319 100644
+--- a/src/components/inner-pages/contact/ContactArea.tsx
++++ b/src/components/inner-pages/contact/ContactArea.tsx
+@@ -28,7 +28,7 @@ const address_data: DataType[] = [
+    {
+       id: 3,
+       title: "Live chat",
+-      address_1: "www.HOZN.com"
++      address_1: "www.fcity.ai"
+    },
+ ]
+ 
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownFive.tsx b/src/components/search-dropdown/home-dropdown/DropdownFive.tsx
+index 0b2dc88..0109f41 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownFive.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownFive.tsx
+@@ -54,13 +54,13 @@ const DropdownFive = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "germany", text: "Shamshabad" },
++                                    { value: "dhaka", text: "Future City" },
++                                    { value: "mexico", text: "Mucherla" },
++                                    { value: "france", text: "Kollur" },
++                                    { value: "india", text: "Maheshwaram" },
++                                    { value: "giza", text: "Adibatla" },
++                                    { value: "cuba", text: "Shankarpally" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -118,13 +118,13 @@ const DropdownFive = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "france", text: "Kollur" },
++                                    { value: "germany", text: "Shamshabad" },
++                                    { value: "dhaka", text: "Future City" },
++                                    { value: "mexico", text: "Mucherla" },
++                                    { value: "india", text: "Maheshwaram" },
++                                    { value: "giza", text: "Adibatla" },
++                                    { value: "cuba", text: "Shankarpally" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownFour.tsx b/src/components/search-dropdown/home-dropdown/DropdownFour.tsx
+index 57b7039..3010789 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownFour.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownFour.tsx
+@@ -56,13 +56,13 @@ const DropdownFour = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "germany", text: "Shamshabad" },
++                                    { value: "dhaka", text: "Future City" },
++                                    { value: "mexico", text: "Mucherla" },
++                                    { value: "france", text: "Kollur" },
++                                    { value: "india", text: "Maheshwaram" },
++                                    { value: "giza", text: "Adibatla" },
++                                    { value: "cuba", text: "Shankarpally" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -120,13 +120,13 @@ const DropdownFour = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "mexico", text: "Mucherla" },
++                                    { value: "dhaka", text: "Future City" },
++                                    { value: "germany", text: "Shamshabad" },
++                                    { value: "france", text: "Kollur" },
++                                    { value: "india", text: "Maheshwaram" },
++                                    { value: "giza", text: "Adibatla" },
++                                    { value: "cuba", text: "Shankarpally" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -184,13 +184,13 @@ const DropdownFour = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "germany", text: "Shamshabad" },
++                                    { value: "dhaka", text: "Future City" },
++                                    { value: "mexico", text: "Mucherla" },
++                                    { value: "france", text: "Kollur" },
++                                    { value: "india", text: "Maheshwaram" },
++                                    { value: "giza", text: "Adibatla" },
++                                    { value: "cuba", text: "Shankarpally" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownModal.tsx b/src/components/search-dropdown/home-dropdown/DropdownModal.tsx
+index 5e25e42..d6fd7d3 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownModal.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownModal.tsx
+@@ -43,12 +43,12 @@ const DropdownModal = () => {
+                                           <NiceSelect className="nice-select location fw-normal"
+                                              options={[
+                                                 { value: "washington", text: "Washington DC" },
+-                                                { value: "mexico", text: "Acapulco, Mexico" },
+-                                                { value: "germany", text: "Berlin, Germany" },
+-                                                { value: "france", text: "Cannes, France" },
+-                                                { value: "india", text: "Delhi, India" },
+-                                                { value: "giza", text: "Giza, Egypt" },
+-                                                { value: "cuba", text: "Havana, Cuba" },
++                                                { value: "mexico", text: "Mucherla" },
++                                                { value: "germany", text: "Shamshabad" },
++                                                { value: "france", text: "Kollur" },
++                                                { value: "india", text: "Maheshwaram" },
++                                                { value: "giza", text: "Adibatla" },
++                                                { value: "cuba", text: "Shankarpally" },
+                                              ]}
+                                              defaultCurrent={0}
+                                              onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownOne.tsx b/src/components/search-dropdown/home-dropdown/DropdownOne.tsx
+index 50b2ed9..4ef0f5f 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownOne.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownOne.tsx
+@@ -33,13 +33,13 @@ const DropdownOne = ({ style }: any) => {
+                   <div className="label">Location</div>
+                   <NiceSelect className={`nice-select location ${style ? "fw-normal" : ""}`}
+                      options={[
+-                        { value: "germany", text: "Berlin, Germany" },
+-                        { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                        { value: "mexico", text: "Acapulco, Mexico" },
+-                        { value: "france", text: "Cannes, France" },
+-                        { value: "india", text: "Delhi, India" },
+-                        { value: "giza", text: "Giza, Egypt" },
+-                        { value: "cuba", text: "Havana, Cuba" },
++                        { value: "germany", text: "Shamshabad" },
++                        { value: "dhaka", text: "Future City" },
++                        { value: "mexico", text: "Mucherla" },
++                        { value: "france", text: "Kollur" },
++                        { value: "india", text: "Maheshwaram" },
++                        { value: "giza", text: "Adibatla" },
++                        { value: "cuba", text: "Shankarpally" },
+                      ]}
+                      defaultCurrent={0}
+                      onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownSeven.tsx b/src/components/search-dropdown/home-dropdown/DropdownSeven.tsx
+index e59dce7..7954abe 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownSeven.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownSeven.tsx
+@@ -57,13 +57,13 @@ const DropdownSeven = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+@@ -130,13 +130,13 @@ const DropdownSeven = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+@@ -203,13 +203,13 @@ const DropdownSeven = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownSix.tsx b/src/components/search-dropdown/home-dropdown/DropdownSix.tsx
+index 577a248..40c7294 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownSix.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownSix.tsx
+@@ -57,13 +57,13 @@ const DropdownSix = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+@@ -131,13 +131,13 @@ const DropdownSix = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+@@ -207,13 +207,13 @@ const DropdownSix = () => {
+                                  <div className="label">Location</div>
+                                  <NiceSelect className="nice-select location fw-normal"
+                                     options={[
+-                                       { value: "france", text: "Cannes, France" },
+-                                       { value: "germany", text: "Berlin, Germany" },
+-                                       { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                       { value: "mexico", text: "Acapulco, Mexico" },
+-                                       { value: "india", text: "Delhi, India" },
+-                                       { value: "giza", text: "Giza, Egypt" },
+-                                       { value: "cuba", text: "Havana, Cuba" },
++                                       { value: "france", text: "Kollur" },
++                                       { value: "germany", text: "Shamshabad" },
++                                       { value: "dhaka", text: "Future City" },
++                                       { value: "mexico", text: "Mucherla" },
++                                       { value: "india", text: "Maheshwaram" },
++                                       { value: "giza", text: "Adibatla" },
++                                       { value: "cuba", text: "Shankarpally" },
+                                     ]}
+                                     defaultCurrent={0}
+                                     onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownThree.tsx b/src/components/search-dropdown/home-dropdown/DropdownThree.tsx
+index 8359f3c..d6c45dc 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownThree.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownThree.tsx
+@@ -33,13 +33,13 @@ const DropdownOne = () => {
+                   <div className="label">Location</div>
+                   <NiceSelect className="nice-select location fw-normal"
+                      options={[
+-                        { value: "germany", text: "Berlin, Germany" },
+-                        { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                        { value: "mexico", text: "Acapulco, Mexico" },
+-                        { value: "france", text: "Cannes, France" },
+-                        { value: "india", text: "Delhi, India" },
+-                        { value: "giza", text: "Giza, Egypt" },
+-                        { value: "cuba", text: "Havana, Cuba" },
++                        { value: "germany", text: "Shamshabad" },
++                        { value: "dhaka", text: "Future City" },
++                        { value: "mexico", text: "Mucherla" },
++                        { value: "france", text: "Kollur" },
++                        { value: "india", text: "Maheshwaram" },
++                        { value: "giza", text: "Adibatla" },
++                        { value: "cuba", text: "Shankarpally" },
+                      ]}
+                      defaultCurrent={0}
+                      onChange={selectHandler}
+diff --git a/src/components/search-dropdown/home-dropdown/DropdownTwo.tsx b/src/components/search-dropdown/home-dropdown/DropdownTwo.tsx
+index 636f39e..dd9f2e5 100644
+--- a/src/components/search-dropdown/home-dropdown/DropdownTwo.tsx
++++ b/src/components/search-dropdown/home-dropdown/DropdownTwo.tsx
+@@ -2,7 +2,7 @@
+ import { useState } from "react";
+ import NiceSelect from "@/ui/NiceSelect";
+ 
+-const tab_title: string[] = ["Buy", "Rent",];
++const tab_title: string[] = ["Buy", "Corporate",];
+ 
+ const DropdownTwo = () => {
+ 
+@@ -34,14 +34,14 @@ const DropdownTwo = () => {
+                      <div className="row gx-0 align-items-center">
+                         <div className="col-xl-2 col-md-6">
+                            <div className="input-box-one border-left">
+-                              <div className="label">I’m looking to...</div>
++                              <div className="label">Property Type</div>
+                               <NiceSelect className="nice-select fw-normal"
+                                  options={[
+-                                    { value: "apartments", text: "Buy Apartments" },
+-                                    { value: "condos", text: "Rent Condos" },
+-                                    { value: "houses", text: "Sell Houses" },
+-                                    { value: "industrial", text: "Rent Industrial" },
+-                                    { value: "villas", text: "Sell Villas" },
++                                    { value: "land", text: "Land" },
++                                    { value: "plot", text: "Plot" },
++                                    { value: "villa", text: "Villa" },
++                                    { value: "apartment", text: "Apartment" },
++                                    { value: "commercial", text: "Commercial" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -54,13 +54,13 @@ const DropdownTwo = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "future_city", text: "Future City" },
++                                    { value: "mucherla", text: "Mucherla" },
++                                    { value: "maheshwaram", text: "Maheshwaram" },
++                                    { value: "shamshabad", text: "Shamshabad" },
++                                    { value: "adibatla", text: "Adibatla" },
++                                    { value: "shankarpally", text: "Shankarpally" },
++                                    { value: "kollur", text: "Kollur" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -71,18 +71,18 @@ const DropdownTwo = () => {
+                         <div className="col-xl-3 col-md-6">
+                            <div className="input-box-one border-left">
+                               <div className="label">Keyword</div>
+-                              <input type="text" placeholder="buy, home, loft, apartment" className="type-input" />
++                              <input type="text" placeholder="plot, land, villa, apartment" className="type-input" />
+                            </div>
+                         </div>
+                         <div className="col-xl-3 col-md-6">
+                            <div className="input-box-one border-left">
+-                              <div className="label">Price Range</div>
++                              <div className="label">Budget</div>
+                               <NiceSelect
+                                  className="nice-select fw-normal"
+                                  options={[
+-                                    { value: "1", text: "$10,000 - $200,000" },
+-                                    { value: "2", text: "$20,000 - $300,000" },
+-                                    { value: "3", text: "$30,000 - $400,000" },
++                                    { value: "1", text: "₹20 Lakh - ₹50 Lakh" },
++                                    { value: "2", text: "₹50 Lakh - ₹1 Crore" },
++                                    { value: "3", text: "₹1 Crore - ₹5 Crore" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -105,14 +105,14 @@ const DropdownTwo = () => {
+                      <div className="row gx-0 align-items-center">
+                         <div className="col-xl-2 col-md-6">
+                            <div className="input-box-one border-left">
+-                              <div className="label">I’m looking to...</div>
++                              <div className="label">Purpose</div>
+                               <NiceSelect className="nice-select fw-normal"
+                                  options={[
+-                                    { value: "industrial", text: "Rent Industrial" },
+-                                    { value: "apartments", text: "Buy Apartments" },
+-                                    { value: "condos", text: "Rent Condos" },
+-                                    { value: "houses", text: "Sell Houses" },
+-                                    { value: "villas", text: "Sell Villas" },
++                                    { value: "logistics", text: "Logistics / Warehousing" },
++                                    { value: "development", text: "Development" },
++                                    { value: "land_aggregation", text: "Land Aggregation" },
++                                    { value: "commercial", text: "Commercial" },
++                                    { value: "institutional", text: "Institutional Investment" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -125,13 +125,13 @@ const DropdownTwo = () => {
+                               <div className="label">Location</div>
+                               <NiceSelect className="nice-select location fw-normal"
+                                  options={[
+-                                    { value: "germany", text: "Berlin, Germany" },
+-                                    { value: "dhaka", text: "Dhanmondi, Dhaka" },
+-                                    { value: "mexico", text: "Acapulco, Mexico" },
+-                                    { value: "france", text: "Cannes, France" },
+-                                    { value: "india", text: "Delhi, India" },
+-                                    { value: "giza", text: "Giza, Egypt" },
+-                                    { value: "cuba", text: "Havana, Cuba" },
++                                    { value: "future_city", text: "Future City" },
++                                    { value: "adibatla", text: "Adibatla — NH-44" },
++                                    { value: "kandukur", text: "Kandukur" },
++                                    { value: "kadthal", text: "Kadthal" },
++                                    { value: "farooqnagar", text: "Farooqnagar" },
++                                    { value: "bongloor", text: "Bongloor" },
++                                    { value: "ibrahimpatnam", text: "Ibrahimpatnam" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+@@ -142,18 +142,18 @@ const DropdownTwo = () => {
+                         <div className="col-xl-3 col-md-6">
+                            <div className="input-box-one border-left">
+                               <div className="label">Keyword</div>
+-                              <input type="text" placeholder="buy, home, loft, apartment" className="type-input" />
++                              <input type="text" placeholder="acres, corporate land, corridor" className="type-input" />
+                            </div>
+                         </div>
+                         <div className="col-xl-3 col-md-6">
+                            <div className="input-box-one border-left">
+-                              <div className="label">Price Range</div>
++                              <div className="label">Budget</div>
+                               <NiceSelect
+                                  className="nice-select fw-normal"
+                                  options={[
+-                                    { value: "1", text: "$10,000 - $200,000" },
+-                                    { value: "2", text: "$20,000 - $300,000" },
+-                                    { value: "3", text: "$30,000 - $400,000" },
++                                    { value: "1", text: "₹1 Crore - ₹10 Crore" },
++                                    { value: "2", text: "₹10 Crore - ₹50 Crore" },
++                                    { value: "3", text: "₹50 Crore +" },
+                                  ]}
+                                  defaultCurrent={0}
+                                  onChange={selectHandler}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownFive.tsx b/src/components/search-dropdown/inner-dropdown/DropdownFive.tsx
+index 42140a9..b8405d9 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownFive.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownFive.tsx
+@@ -57,12 +57,12 @@ const DropdownFive = ({
+                                        <NiceSelect className="nice-select location"
+                                           options={[
+                                              { value: "washington", text: "Washington DC" },
+-                                             { value: "mexico", text: "Acapulco, Mexico" },
+-                                             { value: "germany", text: "Berlin, Germany" },
+-                                             { value: "france", text: "Cannes, France" },
+-                                             { value: "india", text: "Delhi, India" },
+-                                             { value: "giza", text: "Giza, Egypt" },
+-                                             { value: "cuba", text: "Havana, Cuba" },
++                                             { value: "mexico", text: "Mucherla" },
++                                             { value: "germany", text: "Shamshabad" },
++                                             { value: "france", text: "Kollur" },
++                                             { value: "india", text: "Maheshwaram" },
++                                             { value: "giza", text: "Adibatla" },
++                                             { value: "cuba", text: "Shankarpally" },
+                                           ]}
+                                           defaultCurrent={0}
+                                           onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownFour.tsx b/src/components/search-dropdown/inner-dropdown/DropdownFour.tsx
+index d900c44..a5cebf2 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownFour.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownFour.tsx
+@@ -86,12 +86,12 @@ const DropdownFour = ({
+                                        <NiceSelect className="nice-select location fw-normal"
+                                           options={[
+                                              { value: "washington", text: "Washington DC" },
+-                                             { value: "mexico", text: "Acapulco, Mexico" },
+-                                             { value: "germany", text: "Berlin, Germany" },
+-                                             { value: "france", text: "Cannes, France" },
+-                                             { value: "india", text: "Delhi, India" },
+-                                             { value: "giza", text: "Giza, Egypt" },
+-                                             { value: "cuba", text: "Havana, Cuba" },
++                                             { value: "mexico", text: "Mucherla" },
++                                             { value: "germany", text: "Shamshabad" },
++                                             { value: "france", text: "Kollur" },
++                                             { value: "india", text: "Maheshwaram" },
++                                             { value: "giza", text: "Adibatla" },
++                                             { value: "cuba", text: "Shankarpally" },
+                                           ]}
+                                           defaultCurrent={0}
+                                           onChange={handleLocationChange}
+@@ -141,13 +141,13 @@ const DropdownFour = ({
+                                        <div className="label">Location</div>
+                                        <NiceSelect className="nice-select location fw-normal"
+                                           options={[
+-                                             { value: "mexico", text: "Acapulco, Mexico" },
++                                             { value: "mexico", text: "Mucherla" },
+                                              { value: "washington", text: "Washington DC" },
+-                                             { value: "germany", text: "Berlin, Germany" },
+-                                             { value: "france", text: "Cannes, France" },
+-                                             { value: "india", text: "Delhi, India" },
+-                                             { value: "giza", text: "Giza, Egypt" },
+-                                             { value: "cuba", text: "Havana, Cuba" },
++                                             { value: "germany", text: "Shamshabad" },
++                                             { value: "france", text: "Kollur" },
++                                             { value: "india", text: "Maheshwaram" },
++                                             { value: "giza", text: "Adibatla" },
++                                             { value: "cuba", text: "Shankarpally" },
+                                           ]}
+                                           defaultCurrent={0}
+                                           onChange={handleLocationChange}
+@@ -197,13 +197,13 @@ const DropdownFour = ({
+                                        <div className="label">Location</div>
+                                        <NiceSelect className="nice-select location fw-normal"
+                                           options={[
+-                                             { value: "france", text: "Cannes, France" },
++                                             { value: "france", text: "Kollur" },
+                                              { value: "washington", text: "Washington DC" },
+-                                             { value: "mexico", text: "Acapulco, Mexico" },
+-                                             { value: "germany", text: "Berlin, Germany" },
+-                                             { value: "india", text: "Delhi, India" },
+-                                             { value: "giza", text: "Giza, Egypt" },
+-                                             { value: "cuba", text: "Havana, Cuba" },
++                                             { value: "mexico", text: "Mucherla" },
++                                             { value: "germany", text: "Shamshabad" },
++                                             { value: "india", text: "Maheshwaram" },
++                                             { value: "giza", text: "Adibatla" },
++                                             { value: "cuba", text: "Shankarpally" },
+                                           ]}
+                                           defaultCurrent={0}
+                                           onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownOne.tsx b/src/components/search-dropdown/inner-dropdown/DropdownOne.tsx
+index a94e9cf..247b6c3 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownOne.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownOne.tsx
+@@ -52,12 +52,12 @@ const DropdownOne = ({
+                   <NiceSelect className="nice-select location fw-normal"
+                      options={[
+                         { value: "washington", text: "Washington DC" },
+-                        { value: "mexico", text: "Acapulco, Mexico" },
+-                        { value: "germany", text: "Berlin, Germany" },
+-                        { value: "france", text: "Cannes, France" },
+-                        { value: "india", text: "Delhi, India" },
+-                        { value: "giza", text: "Giza, Egypt" },
+-                        { value: "cuba", text: "Havana, Cuba" },
++                        { value: "mexico", text: "Mucherla" },
++                        { value: "germany", text: "Shamshabad" },
++                        { value: "france", text: "Kollur" },
++                        { value: "india", text: "Maheshwaram" },
++                        { value: "giza", text: "Adibatla" },
++                        { value: "cuba", text: "Shankarpally" },
+                      ]}
+                      defaultCurrent={0}
+                      onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownSeven.tsx b/src/components/search-dropdown/inner-dropdown/DropdownSeven.tsx
+index 9753aad..6d69ed6 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownSeven.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownSeven.tsx
+@@ -45,12 +45,12 @@ const DropdownSeven = ({
+                      <NiceSelect className="nice-select location fw-normal"
+                         options={[
+                            { value: "washington", text: "Washington DC" },
+-                           { value: "mexico", text: "Acapulco, Mexico" },
+-                           { value: "germany", text: "Berlin, Germany" },
+-                           { value: "france", text: "Cannes, France" },
+-                           { value: "india", text: "Delhi, India" },
+-                           { value: "giza", text: "Giza, Egypt" },
+-                           { value: "cuba", text: "Havana, Cuba" },
++                           { value: "mexico", text: "Mucherla" },
++                           { value: "germany", text: "Shamshabad" },
++                           { value: "france", text: "Kollur" },
++                           { value: "india", text: "Maheshwaram" },
++                           { value: "giza", text: "Adibatla" },
++                           { value: "cuba", text: "Shankarpally" },
+                         ]}
+                         defaultCurrent={0}
+                         onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownSix.tsx b/src/components/search-dropdown/inner-dropdown/DropdownSix.tsx
+index b76119d..bfc7ee9 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownSix.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownSix.tsx
+@@ -53,12 +53,12 @@ const DropdownSix = ({
+                      <NiceSelect className="nice-select location fw-normal box-style"
+                         options={[
+                            { value: "washington", text: "Washington DC" },
+-                           { value: "mexico", text: "Acapulco, Mexico" },
+-                           { value: "germany", text: "Berlin, Germany" },
+-                           { value: "france", text: "Cannes, France" },
+-                           { value: "india", text: "Delhi, India" },
+-                           { value: "giza", text: "Giza, Egypt" },
+-                           { value: "cuba", text: "Havana, Cuba" },
++                           { value: "mexico", text: "Mucherla" },
++                           { value: "germany", text: "Shamshabad" },
++                           { value: "france", text: "Kollur" },
++                           { value: "india", text: "Maheshwaram" },
++                           { value: "giza", text: "Adibatla" },
++                           { value: "cuba", text: "Shankarpally" },
+                         ]}
+                         defaultCurrent={0}
+                         onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownThree.tsx b/src/components/search-dropdown/inner-dropdown/DropdownThree.tsx
+index 1b8f20b..a988ee0 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownThree.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownThree.tsx
+@@ -42,12 +42,12 @@ const DropdownThree = ({
+                      <NiceSelect className="nice-select location fw-normal"
+                         options={[
+                            { value: "washington", text: "Washington DC" },
+-                           { value: "mexico", text: "Acapulco, Mexico" },
+-                           { value: "germany", text: "Berlin, Germany" },
+-                           { value: "france", text: "Cannes, France" },
+-                           { value: "india", text: "Delhi, India" },
+-                           { value: "giza", text: "Giza, Egypt" },
+-                           { value: "cuba", text: "Havana, Cuba" },
++                           { value: "mexico", text: "Mucherla" },
++                           { value: "germany", text: "Shamshabad" },
++                           { value: "france", text: "Kollur" },
++                           { value: "india", text: "Maheshwaram" },
++                           { value: "giza", text: "Adibatla" },
++                           { value: "cuba", text: "Shankarpally" },
+                         ]}
+                         defaultCurrent={0}
+                         onChange={handleLocationChange}
+diff --git a/src/components/search-dropdown/inner-dropdown/DropdownTwo.tsx b/src/components/search-dropdown/inner-dropdown/DropdownTwo.tsx
+index b0f79fe..268447b 100644
+--- a/src/components/search-dropdown/inner-dropdown/DropdownTwo.tsx
++++ b/src/components/search-dropdown/inner-dropdown/DropdownTwo.tsx
+@@ -42,12 +42,12 @@ const DropdownTwo = ({
+                      <NiceSelect className="nice-select location"
+                         options={[
+                            { value: "washington", text: "Washington DC" },
+-                           { value: "mexico", text: "Acapulco, Mexico" },
+-                           { value: "germany", text: "Berlin, Germany" },
+-                           { value: "france", text: "Cannes, France" },
+-                           { value: "india", text: "Delhi, India" },
+-                           { value: "giza", text: "Giza, Egypt" },
+-                           { value: "cuba", text: "Havana, Cuba" },
++                           { value: "mexico", text: "Mucherla" },
++                           { value: "germany", text: "Shamshabad" },
++                           { value: "france", text: "Kollur" },
++                           { value: "india", text: "Maheshwaram" },
++                           { value: "giza", text: "Adibatla" },
++                           { value: "cuba", text: "Shankarpally" },
+                         ]}
+                         defaultCurrent={0}
+                         onChange={handleLocationChange}
+diff --git a/src/data/home-data/DropdownData.ts b/src/data/home-data/DropdownData.ts
+index 4d588c9..9f9866d 100644
+--- a/src/data/home-data/DropdownData.ts
++++ b/src/data/home-data/DropdownData.ts
+@@ -24,7 +24,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_1",
+       col: "col-xl-4",
+       label: "Location",
+-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -50,7 +50,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_2_tab_1",
+       col: "col-xl-3",
+       label: "Location",
+-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -75,7 +75,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_2_tab_2",
+       col: "col-xl-3",
+       label: "Location",
+-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -100,7 +100,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_3_tab_1",
+       col: "mb-25",
+       label: "Location",
+-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -126,7 +126,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_3_tab_2",
+       col: "mb-25",
+       label: "Location",
+-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -152,7 +152,7 @@ const dropdoun_data: InputField[] = [
+       page: "home_3_tab_3",
+       col: "mb-25",
+       label: "Location",
+-      options: [{ value: "1", text: "Berlin, Germany" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Dhanmondi, Dhaka" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Shamshabad" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Future City" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -180,7 +180,7 @@ const dropdoun_data: InputField[] = [
+       col: "col-lg-4",
+       label: "Location",
+       border_lg: "border-left",
+-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -207,7 +207,7 @@ const dropdoun_data: InputField[] = [
+       col: "col-lg-4",
+       label: "Location",
+       border_lg: "border-left",
+-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -231,7 +231,7 @@ const dropdoun_data: InputField[] = [
+       id: 2,
+       page: "home_6_tab_1",
+       label: "Location",
+-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -255,7 +255,7 @@ const dropdoun_data: InputField[] = [
+       id: 2,
+       page: "home_6_tab_2",
+       label: "Location",
+-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+@@ -279,7 +279,7 @@ const dropdoun_data: InputField[] = [
+       id: 2,
+       page: "home_6_tab_3",
+       label: "Location",
+-      options: [{ value: "1", text: "Berlin, Germany" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Dhanmondi, Dhaka" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
++      options: [{ value: "1", text: "Shamshabad" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Future City" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
+       className: "location",
+    },
+    {
+diff --git a/src/data/home-data/FeatureData.ts b/src/data/home-data/FeatureData.ts
+index 6729abd..72038a6 100644
+--- a/src/data/home-data/FeatureData.ts
++++ b/src/data/home-data/FeatureData.ts
+@@ -52,7 +52,7 @@ const feature_data: DataType[] = [
+       icon: featureIcon_1,
+       title: "Buy a home",
+       btn:"Find Home",
+-      desc: "Explore HOZN 2 million+ homes and uncover your ideal living space.",
++      desc: "Explore FCITY.ai’s verified land, plots and homes and uncover your ideal opportunity.",
+    },
+    {
+       id: 2,
+@@ -60,7 +60,7 @@ const feature_data: DataType[] = [
+       icon: featureIcon_2,
+       title: "RENT A HOME",
+       btn:"Rent Home",
+-      desc: "Discover a rental you'll love on HOZN, thanks to 35+ filters and tailored keywords.",
++      desc: "Discover the right property with FCITY.ai, thanks to 35+ filters and tailored keywords.",
+    },
+    {
+       id: 3,
+@@ -236,7 +236,7 @@ const feature_data: DataType[] = [
+       icon: feature5Icon_1,
+       title: "Buy a home",
+       btn: "Find Home",
+-      desc: "Explore HOZN 2 million+ homes and uncover your ideal living space.",
++      desc: "Explore FCITY.ai’s verified land, plots and homes and uncover your ideal opportunity.",
+    },
+    {
+       id: 2,
+@@ -244,7 +244,7 @@ const feature_data: DataType[] = [
+       icon: feature5Icon_2,
+       title: "Buy a home",
+       btn: "Rent Home",
+-      desc: "Discover a rental you'll love on HOZN, thanks to 35+ filters and tailored keywords.",
++      desc: "Discover the right property with FCITY.ai, thanks to 35+ filters and tailored keywords.",
+       data_delay_time: "0.1s",
+    },
+    {
+@@ -290,7 +290,7 @@ const feature_data: DataType[] = [
+       icon: feature6Icon_1,
+       title: "Buy a home",
+       btn: "Find Home",
+-      desc: "Explore HOZN 2 million+ homes and uncover your ideal living space.",
++      desc: "Explore FCITY.ai’s verified land, plots and homes and uncover your ideal opportunity.",
+    },
+    {
+       id: 2,
+@@ -298,7 +298,7 @@ const feature_data: DataType[] = [
+       icon: feature6Icon_2,
+       title: "Rent a home",
+       btn: "Rent Home",
+-      desc: "Discover a rental you'll love on HOZN, thanks to 35+ filters and tailored keywords.",
++      desc: "Discover the right property with FCITY.ai, thanks to 35+ filters and tailored keywords.",
+       data_delay_time: "0.1s",
+    },
+    {
+diff --git a/src/data/home-data/FeaturedListingData.ts b/src/data/home-data/FeaturedListingData.ts
+index 786e3a6..89b9c6f 100644
+--- a/src/data/home-data/FeaturedListingData.ts
++++ b/src/data/home-data/FeaturedListingData.ts
+@@ -18,8 +18,8 @@ const feature_listing_data:DataType[]=[
+       page: "home_5",
+       tag: "Rent",
+       item_bg_img:"item-bg-1",
+-      title: "Blueberry villa.",
+-      address: "Mirpur 10, Stadium dhaka 1208",
++      title: "Gated Villa, Shamshabad",
++      address: "Shamshabad, Hyderabad",
+       property_info: [{feature: "sqft", total_feature: 2137 }, {feature: "bed", total_feature: 0o3 }, {feature: "kitchen", total_feature: 0o1 }, {feature: "bath", total_feature: 0o2 },],
+    },
+    {
+@@ -27,20 +27,20 @@ const feature_listing_data:DataType[]=[
+       page: "home_5",
+       tag: "Sell",
+       item_bg_img:"item-bg-2",
+-      title: "Swimming Pool Villa",
+-      address: "127 green road, California, USA",
++      title: "Future City Premium Plot",
++      address: "Mucherla, Hyderabad",
+       data_delay_time:"0.1s",
+-      property_info: [{feature: "sqft", total_feature: 2137 }, {feature: "bed", total_feature: 0o3 }, {feature: "kitchen", total_feature: 0o1 }, {feature: "bath", total_feature: 0o2 },],
++      property_info: [{feature: "sqft", total_feature: 2400 }, {feature: "facing", total_feature: 0o1 }, {feature: "road ft", total_feature: 33 },],
+    },
+    {
+       id: 3,
+       page: "home_5",
+       tag: "Rent",
+       item_bg_img:"item-bg-3",
+-      title: "Modern Duplex",
+-      address: "Twin tower, 32 street, Florida",
++      title: "Modern Apartment, Kollur",
++      address: "Kollur, Hyderabad",
+       data_delay_time:"0.2s",
+-      property_info: [{feature: "sqft", total_feature: 2137 }, {feature: "bed", total_feature: 0o3 }, {feature: "kitchen", total_feature: 0o1 }, {feature: "bath", total_feature: 0o2 },],
++      property_info: [{feature: "sqft", total_feature: 1850 }, {feature: "bed", total_feature: 0o3 }, {feature: "kitchen", total_feature: 0o1 }, {feature: "bath", total_feature: 0o2 },],
+    },
+ ]
+ 
+diff --git a/src/data/home-data/MenuData.ts b/src/data/home-data/MenuData.ts
+index 4e790d7..fe74b9e 100644
+--- a/src/data/home-data/MenuData.ts
++++ b/src/data/home-data/MenuData.ts
+@@ -33,14 +33,14 @@ const menu_data: MenuItem[] = [
+     {
+         id: 2,
+         has_dropdown: true,
+-        title: "Listing",
++        title: "Properties",
+         link: "#",
+         sub_menus: [
+             
+-            { link: "/listing_07", title: "Grid Top Filter" },
+-            { link: "/listing_05", title: "Grid Sidebar" },
+-            { link: "/listing_details_06", title: "Listing Details" },
+-            { link: "/listing_09", title: "Grid Banner Filter" },
++            { link: "/listing_07", title: "All Properties" },
++            { link: "/listing_05", title: "Browse by Type" },
++            { link: "/listing_details_06", title: "Property Details" },
++            { link: "/listing_09", title: "Featured Opportunities" },
+             
+         ],
+     },
+@@ -49,10 +49,10 @@ const menu_data: MenuItem[] = [
+     {
+         id: 3,
+         has_dropdown: true,
+-        title: "Pages",
++        title: "Company",
+         link: "#",
+         sub_menus: [
+-            { link: "/about_us_02", title: "About us" },
++            { link: "/about_us_02", title: "About FCITY.ai" },
+             { link: "/contact", title: "Contact Us" },
+             { link: "/faq", title: "FAQ's" },
+             
+@@ -66,13 +66,13 @@ const menu_data: MenuItem[] = [
+     {
+         id: 4,
+         has_dropdown: true,
+-        title: "Blog",
++        title: "Insights",
+         link: "#",
+         sub_menus: [
+-            { link: "/blog_01", title: "Blog Grid" },
+-            { link: "/blog_02", title: "Blog List" },
+-            { link: "/blog_03", title: "Blog 2 column" },
+-            { link: "/blog_details", title: "Blog Details" },
++            { link: "/blog_01", title: "Market Insights" },
++            { link: "/blog_02", title: "Guides" },
++            { link: "/blog_03", title: "Future City Updates" },
++            { link: "/blog_details", title: "Article" },
+         ],
+     },
+ ];
+diff --git a/src/data/home-data/PropertyData.ts b/src/data/home-data/PropertyData.ts
+index c5fcf2c..093422e 100644
+--- a/src/data/home-data/PropertyData.ts
++++ b/src/data/home-data/PropertyData.ts
+@@ -49,6 +49,11 @@ interface DataType {
+    price: number;
+    price_text?: string;
+    carousel?: string;
++   property_type?: "Land" | "Plot" | "Villa" | "Apartment" | "Commercial" | "Corporate Land";
++   verification_status?: string;
++   trust_score?: number;
++   suitable_for?: string;
++   last_verified?: string;
+ }[];
+ 
+ const property_data: DataType[] = [
+@@ -58,7 +63,7 @@ const property_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Mirpur 10, Stadium dhaka 1208",
++      address: "Kandukur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1370 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       price: 3280,
+       price_text: "m",
+@@ -71,7 +76,7 @@ const property_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Muza link road, ca, usa",
++      address: "Tukkuguda, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       data_delay_time: "0.1s",
+       price: 28100,
+@@ -84,7 +89,7 @@ const property_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Mirpur 10, Stadium",
++      address: "Kollur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       data_delay_time: "0.2s",
+       price: 42500,
+@@ -96,7 +101,7 @@ const property_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Mirpur 10, Stadium dhaka 1208",
++      address: "Kandukur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1370 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       price: 3280,
+       price_text: "m",
+@@ -109,7 +114,7 @@ const property_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_5, active: "active" }, { img: propertyThumb_4 }, { img: propertyThumb_6 }],
+       title: "White House villa",
+-      address: "Muza link road, ca, usa",
++      address: "Tukkuguda, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       data_delay_time: "0.1s",
+       price: 28100,
+@@ -121,7 +126,7 @@ const property_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_6, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_4 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Mirpur 10, Stadium",
++      address: "Kollur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       data_delay_time: "0.2s",
+       price: 42500,
+@@ -130,41 +135,59 @@ const property_data: DataType[] = [
+    },
+ 
+    // home two
+-   
++
+    {
+       id: 1,
+       page: "home_2",
+-      tag: "FOR RENT",
++      tag: "PLOT",
+       carousel_thumb: [{ img: property2Thumb_1, active: "active" }, { img: property2Thumb_2 }, { img: property2Thumb_3 }],
+-      title: "Blueberry villa.",
+-      address: "Mirpur 10, Stadium dhaka 1208",
+-      property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1370 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+-      price: 34900.00,
++      title: "Future City Premium Plot",
++      address: "Mucherla, Hyderabad",
++      property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2400 }, { icon: propertyIcon_2, feature: "facing", total_feature: 0o1 }, { icon: propertyIcon_3, feature: "road ft", total_feature: 33 },],
++      price: 9800000,
++      price_text: "",
+       carousel: "1",
++      property_type: "Plot",
++      verification_status: "Verified",
++      trust_score: 92,
++      suitable_for: "Individual / Investor",
++      last_verified: "3 days ago",
+    },
+    {
+       id: 2,
+       page: "home_2",
+-      tag: "FOR SELL",
++      tag: "VILLA",
+       carousel_thumb: [{ img: property2Thumb_2, active: "active" }, { img: property2Thumb_1 }, { img: property2Thumb_2 }],
+-      title: "White House villa",
+-      address: "Muza link road, ca, usa",
+-      property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
++      title: "Gated Villa, Shamshabad Corridor",
++      address: "Shamshabad, Hyderabad",
++      property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 3200 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o4 },],
+       data_delay_time: "0.1s",
+-      price: 28100.00,
++      price: 24500000,
++      price_text: "",
+       carousel: "2",
++      property_type: "Villa",
++      verification_status: "Verified",
++      trust_score: 88,
++      suitable_for: "Individual / Investor",
++      last_verified: "1 week ago",
+    },
+    {
+       id: 3,
+       page: "home_2",
+-      tag: "FOR SELL",
++      tag: "CORPORATE LAND",
+       carousel_thumb: [{ img: property2Thumb_3, active: "active" }, { img: property2Thumb_2 }, { img: property2Thumb_1 }],
+-      title: "Luxury villa in Dal lake.",
+-      address: "Mirpur 10, Stadium",
+-      property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1270 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o2 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
++      title: "12-Acre Industrial Land Parcel",
++      address: "Adibatla, Hyderabad — NH-44",
++      property_info: [{ icon: propertyIcon_1, feature: "acres", total_feature: 12 }, { icon: propertyIcon_2, feature: "road facing", total_feature: 0o1 }, { icon: propertyIcon_3, feature: "zone", total_feature: 0o1 },],
+       data_delay_time: "0.2s",
+-      price: 42500.00,
++      price: 180000000,
++      price_text: "",
+       carousel: "3",
++      property_type: "Corporate Land",
++      verification_status: "Under Review",
++      trust_score: 81,
++      suitable_for: "Corporate / Institutional",
++      last_verified: "2 weeks ago",
+    },
+ 
+    // home_3_property_2
+@@ -176,7 +199,7 @@ const property_data: DataType[] = [
+       thumb:property3Thumb_1,
+       carousel_thumb: [{id:"1", img: propertyLargThumb_1}, {id:"2", img: propertyLargThumb_2 }, {id:"3", img: propertyLargThumb_3 }],
+       title: "Blueberry villa.",
+-      address: "Mirpur 10, Stadium dhaka 1208",
++      address: "Kandukur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1780 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
+       price: 34900,
+       carousel:"03",
+@@ -188,7 +211,7 @@ const property_data: DataType[] = [
+       thumb:property3Thumb_2,
+       carousel_thumb: [{id:"4", img: propertyLargThumb_4}, {id:"5", img: propertyLargThumb_5 }, {id:"6", img: propertyLargThumb_6 }],
+       title: "White House villa",
+-      address: "California link road, ca, usa",
++      address: "Shankarpally, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2340 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
+       price: 28100,
+       carousel:"03",
+@@ -200,7 +223,7 @@ const property_data: DataType[] = [
+       thumb:property3Thumb_3,
+       carousel_thumb: [{id:"1", img: propertyLargThumb_1}, {id:"5", img: propertyLargThumb_5 }, {id:"3", img: propertyLargThumb_3 }, {id:"2", img: propertyLargThumb_2 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Mirpur 10, Stadium",
++      address: "Kollur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1857 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o1 },],
+       price: 42500,
+       carousel:"04",
+@@ -212,7 +235,7 @@ const property_data: DataType[] = [
+       thumb:property3Thumb_4,
+       carousel_thumb: [{id:"4", img: propertyLargThumb_4}, {id:"6", img: propertyLargThumb_6 }, {id:"3", img: propertyLargThumb_3 }, {id:"2", img: propertyLargThumb_2 }],
+       title: "South Sun House",
+-      address: "Mirpur 10, Stadium",
++      address: "Kollur, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2450 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
+       price: 55500,
+       carousel:"04",
+@@ -224,7 +247,7 @@ const property_data: DataType[] = [
+       thumb:property3Thumb_2,
+       carousel_thumb: [{id:"4", img: propertyLargThumb_4}, {id:"5", img: propertyLargThumb_5 }, {id:"6", img: propertyLargThumb_6 }],
+       title: "White House villa",
+-      address: "California link road, ca, usa",
++      address: "Shankarpally, Hyderabad",
+       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2340 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
+       price: 28100,
+       carousel:"03",
+diff --git a/src/data/inner-data/ListingData.ts b/src/data/inner-data/ListingData.ts
+index e5077c5..cb8a6fb 100644
+--- a/src/data/inner-data/ListingData.ts
++++ b/src/data/inner-data/ListingData.ts
+@@ -67,8 +67,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -83,8 +83,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -101,8 +101,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       price: 42500.00,
+       carousel: "3",
+@@ -116,8 +116,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -134,8 +134,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_5, active: "active" }, { img: propertyThumb_4 }, { img: propertyThumb_6 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1570, bed: "01", bath: "02" },
+       price: 28100.00,
+       carousel: "5",
+@@ -149,8 +149,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_6, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_4 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 42500.00,
+@@ -166,8 +166,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_7, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Muza link road, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla Main Road, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1470, bed: "01", bath: "04" },
+       price: 42500.00,
+       price_text: "m",
+@@ -182,8 +182,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_8, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1170, bed: "04", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -199,8 +199,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_5, active: "active" }, { img: propertyThumb_4 }, { img: propertyThumb_6 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1070, bed: "02", bath: "03" },
+       price: 28100.00,
+       carousel: "5",
+@@ -214,8 +214,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_6, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_4 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 42500.00,
+@@ -231,8 +231,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_7, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Muza link road, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla Main Road, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "03" },
+       price: 42500.00,
+       price_text: "m",
+@@ -247,8 +247,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_8, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1070, bed: "04", bath: "04" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -263,8 +263,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1170, bed: "02", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -279,8 +279,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1470, bed: "03", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -297,8 +297,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1370, bed: "01", bath: "02" },
+       price: 42500.00,
+       carousel: "3",
+@@ -312,8 +312,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1570, bed: "01", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -329,8 +329,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1670, bed: "04", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -345,8 +345,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       data_delay_time: "0.1s",
+       property_info: { sqft: 1370, bed: "03", bath: "04" },
+       price: 28100.00,
+@@ -363,8 +363,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1270, bed: "01", bath: "02" },
+       price: 42500.00,
+       carousel: "3",
+@@ -378,8 +378,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -398,8 +398,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_9, active: "active" }, { img: propertyThumb_10 }, { img: propertyThumb_11 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01" },
+       price: 1710,
+       carousel: "1",
+@@ -413,8 +413,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_10, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_11 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -430,8 +430,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_11, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01" },
+       price: 42500.00,
+       carousel: "3",
+@@ -445,8 +445,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_12, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -462,8 +462,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_13, active: "active" }, { img: propertyThumb_11 }, { img: propertyThumb_9 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02" },
+       price: 28100.00,
+       carousel: "5",
+@@ -477,8 +477,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_14, active: "active" }, { img: propertyThumb_13 }, { img: propertyThumb_12 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1570, bed: "04", bath: "04" },
+       data_delay_time: "0.1s",
+       price: 42500.00,
+@@ -493,8 +493,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_12, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1670, bed: "02", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -510,8 +510,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_13, active: "active" }, { img: propertyThumb_11 }, { img: propertyThumb_9 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "03" },
+       price: 28100.00,
+       carousel: "5",
+@@ -525,8 +525,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_14, active: "active" }, { img: propertyThumb_13 }, { img: propertyThumb_12 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1170, bed: "02", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 42500.00,
+@@ -541,8 +541,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_9, active: "active" }, { img: propertyThumb_10 }, { img: propertyThumb_11 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 1710,
+       carousel: "1",
+@@ -556,8 +556,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_10, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_11 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1370, bed: "02", bath: "04" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -573,8 +573,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_11, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1370, bed: "02", bath: "04" },
+       price: 42500.00,
+       carousel: "3",
+@@ -588,8 +588,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_12, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Havana, Cuba",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1370, bed: "02", bath: "04" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -605,8 +605,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_13, active: "active" }, { img: propertyThumb_11 }, { img: propertyThumb_9 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1270, bed: "01", bath: "04" },
+       price: 28100.00,
+       carousel: "5",
+@@ -620,8 +620,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_14, active: "active" }, { img: propertyThumb_13 }, { img: propertyThumb_12 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1170, bed: "03", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 42500.00,
+@@ -636,8 +636,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_9, active: "active" }, { img: propertyThumb_10 }, { img: propertyThumb_11 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Havana, Cuba",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1670, bed: "02", bath: "01" },
+       price: 1710,
+       carousel: "1",
+@@ -656,8 +656,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-one",
+       carousel_thumb: [{id:"1", img: propertyLargeThumb_1 }, {id:"2", img: propertyLargeThumb_2 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Marbel Apartments",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01", kitchen: "01" },
+       price: 24000,
+       status: "Sell Villas",
+@@ -671,8 +671,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-two",
+       carousel_thumb: [{id:"3", img: propertyLargeThumb_3 }, {id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01", kitchen: "01" },
+       data_delay_time: "0.1s",
+       price: 2370,
+@@ -689,8 +689,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-three",
+       carousel_thumb: [{id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Luxury villa Dal lake",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01", kitchen: "01" },
+       price: 43000,
+       status: "Sell Houses",
+@@ -704,8 +704,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-four",
+       carousel_thumb: [{id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }, {id:"6", img: propertyLargeThumb_6 }],
+       title: "Galaxy Touch Flat",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04", kitchen: "01" },
+       data_delay_time: "0.1s",
+       price: 1820,
+@@ -722,8 +722,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-five",
+       carousel_thumb: [{id:"6", img: propertyLargeThumb_6 }, {id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }],
+       title: "Morpho House",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02", kitchen: "01" },
+       price: 27100,
+       carousel: "5",
+@@ -739,8 +739,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-three",
+       carousel_thumb: [{id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Luxury villa Dal lake",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01", kitchen: "01" },
+       price: 43000,
+       status: "Sell Houses",
+@@ -754,8 +754,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-four",
+       carousel_thumb: [{id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }, {id:"6", img: propertyLargeThumb_6 }],
+       title: "Galaxy Touch Flat",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04", kitchen: "01" },
+       data_delay_time: "0.1s",
+       price: 1820,
+@@ -772,8 +772,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-five",
+       carousel_thumb: [{id:"6", img: propertyLargeThumb_6 }, {id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }],
+       title: "Morpho House",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02", kitchen: "01" },
+       price: 27100,
+       carousel: "5",
+@@ -789,8 +789,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-one",
+       carousel_thumb: [{id:"1", img: propertyLargeThumb_1 }, {id:"2", img: propertyLargeThumb_2 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Marbel Apartments",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01", kitchen: "01" },
+       price: 24000,
+       status: "Sell Villas",
+@@ -804,8 +804,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-two",
+       carousel_thumb: [{id:"3", img: propertyLargeThumb_3 }, {id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01", kitchen: "01" },
+       data_delay_time: "0.1s",
+       price: 2370,
+@@ -822,8 +822,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-one",
+       carousel_thumb: [{id:"1", img: propertyLargeThumb_1 }, {id:"2", img: propertyLargeThumb_2 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Marbel Apartments",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01", kitchen: "01" },
+       price: 24000,
+       status: "Sell Villas",
+@@ -837,8 +837,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-two",
+       carousel_thumb: [{id:"3", img: propertyLargeThumb_3 }, {id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01", kitchen: "01" },
+       data_delay_time: "0.1s",
+       price: 2370,
+@@ -856,8 +856,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -872,8 +872,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -890,8 +890,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -906,8 +906,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "03" },
+       price: 3280,
+       price_text: "m",
+@@ -923,8 +923,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_5, active: "active" }, { img: propertyThumb_4 }, { img: propertyThumb_6 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1570, bed: "01", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -939,8 +939,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_6, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_4 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -956,8 +956,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_7, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Muza link road, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla Main Road, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1470, bed: "01", bath: "04" },
+       price: 42500.00,
+       price_text: "m",
+@@ -972,8 +972,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_8, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1170, bed: "04", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -988,8 +988,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_15, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1170, bed: "04", bath: "02" },
+       data_delay_time: "0.2s",
+       price: 3280,
+@@ -1004,8 +1004,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_4, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "03" },
+       price: 3280,
+       price_text: "m",
+@@ -1021,8 +1021,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_5, active: "active" }, { img: propertyThumb_4 }, { img: propertyThumb_6 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1570, bed: "01", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1037,8 +1037,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_6, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_4 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1054,8 +1054,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_7, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "Muza link road, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla Main Road, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1470, bed: "01", bath: "04" },
+       price: 42500.00,
+       price_text: "m",
+@@ -1070,8 +1070,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_8, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1170, bed: "04", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -1086,8 +1086,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_15, active: "active" }, { img: propertyThumb_5 }, { img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Miramar, Playa. Ciudad de La Habana, Cuba.",
+-      location: "Havana, Cuba",
++      address: "Shankarpally Road, Hyderabad, Telangana",
++      location: "Shankarpally, Hyderabad",
+       property_info: { sqft: 1170, bed: "04", bath: "02" },
+       data_delay_time: "0.2s",
+       price: 3280,
+@@ -1102,8 +1102,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -1118,8 +1118,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1136,8 +1136,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1152,8 +1152,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_1, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -1168,8 +1168,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_2, active: "active" }, { img: propertyThumb_3 }, { img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1186,8 +1186,8 @@ const listing_data: DataType[] = [
+       tag_bg: "sale",
+       carousel_thumb: [{ img: propertyThumb_3, active: "active" }, { img: propertyThumb_2 }, { img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1205,8 +1205,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_9, active: "active" }, { img: propertyThumb_10 }, { img: propertyThumb_11 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01" },
+       price: 1710,
+       carousel: "1",
+@@ -1220,8 +1220,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_10, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_11 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1237,8 +1237,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_11, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1253,8 +1253,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_12, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04" },
+       price: 3280,
+       price_text: "m",
+@@ -1269,8 +1269,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_13, active: "active" }, { img: propertyThumb_11 }, { img: propertyThumb_9 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1285,8 +1285,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_14, active: "active" }, { img: propertyThumb_13 }, { img: propertyThumb_12 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1570, bed: "04", bath: "04" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1301,8 +1301,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_9, active: "active" }, { img: propertyThumb_10 }, { img: propertyThumb_11 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01" },
+       price: 1710,
+       carousel: "1",
+@@ -1316,8 +1316,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_10, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_11 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1333,8 +1333,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_11, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1349,8 +1349,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_12, active: "active" }, { img: propertyThumb_9 }, { img: propertyThumb_10 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04" },
+       price: 3280,
+       price_text: "m",
+@@ -1365,8 +1365,8 @@ const listing_data: DataType[] = [
+       tag: "FOR SELL",
+       carousel_thumb: [{ img: propertyThumb_13, active: "active" }, { img: propertyThumb_11 }, { img: propertyThumb_9 }],
+       title: "White House villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1381,8 +1381,8 @@ const listing_data: DataType[] = [
+       tag: "FOR RENT",
+       carousel_thumb: [{ img: propertyThumb_14, active: "active" }, { img: propertyThumb_13 }, { img: propertyThumb_12 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "110015. Taluk, New Delhi, India",
+-      location: "Delhi, India",
++      address: "Maheshwaram Road, Hyderabad, Telangana",
++      location: "Maheshwaram, Hyderabad",
+       property_info: { sqft: 1570, bed: "04", bath: "04" },
+       data_delay_time: "0.2s",
+       price: 42500.00,
+@@ -1402,8 +1402,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-one",
+       carousel_thumb: [{id:"1", img: propertyLargeThumb_1 }, {id:"2", img: propertyLargeThumb_2 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Marbel Apartments",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "01", kitchen: "01", parking_lot: "01", garden: "02", },
+       price: 24000,
+       status: "Sell Villas",
+@@ -1417,8 +1417,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-two",
+       carousel_thumb: [{id:"3", img: propertyLargeThumb_3 }, {id:"2", img: propertyLargeThumb_2 }, {id:"1", img: propertyLargeThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "01", kitchen: "01", parking_lot: "01", garden: "02", },
+       data_delay_time: "0.1s",
+       price: 2370,
+@@ -1435,8 +1435,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-three",
+       carousel_thumb: [{id:"2", img: propertyLargeThumb_2 }, { id:"1", img: propertyLargeThumb_1 }, {id:"3", img: propertyLargeThumb_3 }],
+       title: "Luxury villa Dal lake",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1070, bed: "03", bath: "01", kitchen: "01", parking_lot: "01", garden: "02", },
+       price: 43000,
+       status: "Sell Houses",
+@@ -1450,8 +1450,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-four",
+       carousel_thumb: [{id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }, {id:"6", img: propertyLargeThumb_6 }],
+       title: "Galaxy Touch Flat",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04", kitchen: "01", parking_lot: "01", garden: "02", },
+       data_delay_time: "0.1s",
+       price: 1820,
+@@ -1468,8 +1468,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-five",
+       carousel_thumb: [{id:"6", img: propertyLargeThumb_6 }, {id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }],
+       title: "Morpho House",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02", kitchen: "01", parking_lot: "01", garden: "02", },
+       price: 27100,
+       carousel: "5",
+@@ -1485,8 +1485,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-six",
+       carousel_thumb: [{id:"6", img: propertyLargeThumb_6 }, {id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }],
+       title: "Oepn Villa",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02", kitchen: "01", parking_lot: "01", garden: "02", },
+       price: 27100,
+       carousel: "5",
+@@ -1501,8 +1501,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-four",
+       carousel_thumb: [{id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }, {id:"6", img: propertyLargeThumb_6 }],
+       title: "Galaxy Touch Flat",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1370, bed: "04", bath: "04", kitchen: "01", parking_lot: "01", garden: "02", },
+       data_delay_time: "0.1s",
+       price: 1820,
+@@ -1519,8 +1519,8 @@ const listing_data: DataType[] = [
+       bg_img: "item-five",
+       carousel_thumb: [{id:"6", img: propertyLargeThumb_6 }, {id:"4", img: propertyLargeThumb_4 }, {id:"5", img: propertyLargeThumb_5 }],
+       title: "Morpho House",
+-      address: "Boulevard d'Alsace, Cannes, France",
+-      location: "Cannes, France",
++      address: "Kollur Road, Hyderabad, Telangana",
++      location: "Kollur, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "02", kitchen: "01", parking_lot: "01", garden: "02", },
+       price: 27100,
+       carousel: "5",
+@@ -1538,8 +1538,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_16,
+       carousel_thumb: [{id:"1", img: propertyThumb_1, active: "active" }, {id:"2", img: propertyThumb_2 }, {id:"3", img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -1555,8 +1555,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_17,
+       carousel_thumb: [{id:"2", img: propertyThumb_2, active: "active" }, {id:"3", img: propertyThumb_3 }, {id:"1", img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1574,8 +1574,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_18,
+       carousel_thumb: [{id:"3", img: propertyThumb_3, active: "active" }, {id:"2", img: propertyThumb_2 }, {id:"1", img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       price: 42500.00,
+       carousel: "3",
+@@ -1590,8 +1590,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_19,
+       carousel_thumb: [{id:"4", img: propertyThumb_4, active: "active" }, {id:"5", img: propertyThumb_5 }, {id:"6", img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -1609,8 +1609,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_18,
+       carousel_thumb: [{id:"3", img: propertyThumb_3, active: "active" }, {id:"2", img: propertyThumb_2 }, {id:"1", img: propertyThumb_1 }],
+       title: "Luxury villa in Dal lake.",
+-      address: "44 Elmessaha Street Dokki, Giza,Egypt",
+-      location: "Giza, Egypt",
++      address: "Adibatla Industrial Corridor, NH-44, Hyderabad, Telangana",
++      location: "Adibatla, Hyderabad",
+       property_info: { sqft: 1170, bed: "01", bath: "04" },
+       price: 42500.00,
+       carousel: "3",
+@@ -1625,8 +1625,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_19,
+       carousel_thumb: [{id:"4", img: propertyThumb_4, active: "active" }, {id:"5", img: propertyThumb_5 }, {id:"6", img: propertyThumb_6 }],
+       title: "Blueberry villa",
+-      address: "Alexanderstraße 40, Berlin, Germany.",
+-      location: "Berlin, Germany",
++      address: "Shamshabad Main Road, Hyderabad, Telangana",
++      location: "Shamshabad, Hyderabad",
+       property_info: { sqft: 1470, bed: "02", bath: "03" },
+       data_delay_time: "0.1s",
+       price: 3280,
+@@ -1643,8 +1643,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_16,
+       carousel_thumb: [{id:"1", img: propertyThumb_1, active: "active" }, {id:"2", img: propertyThumb_2 }, {id:"3", img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -1660,8 +1660,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_17,
+       carousel_thumb: [{id:"2", img: propertyThumb_2, active: "active" }, {id:"3", img: propertyThumb_3 }, {id:"1", img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+@@ -1678,8 +1678,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_16,
+       carousel_thumb: [{id:"1", img: propertyThumb_1, active: "active" }, {id:"2", img: propertyThumb_2 }, {id:"3", img: propertyThumb_3 }],
+       title: "Blueberry villa",
+-      address: "Twin tower, Acapulco, Mexico",
+-      location: "Acapulco, Mexico",
++      address: "Mucherla, Hyderabad, Telangana",
++      location: "Mucherla, Hyderabad",
+       property_info: { sqft: 1370, bed: "03", bath: "02" },
+       price: 3280,
+       carousel: "1",
+@@ -1695,8 +1695,8 @@ const listing_data: DataType[] = [
+       thumb: propertyThumb_17,
+       carousel_thumb: [{id:"2", img: propertyThumb_2, active: "active" }, {id:"3", img: propertyThumb_3 }, {id:"1", img: propertyThumb_1 }],
+       title: "White House villa",
+-      address: "Issaquah, Washington DC",
+-      location: "Washington DC",
++      address: "Future City Corridor, Hyderabad, Telangana",
++      location: "Future City, Hyderabad",
+       property_info: { sqft: 1270, bed: "04", bath: "01" },
+       data_delay_time: "0.1s",
+       price: 28100.00,
+diff --git a/src/data/inner-data/ServiceData.ts b/src/data/inner-data/ServiceData.ts
+index b55bdc8..ff83913 100644
+--- a/src/data/inner-data/ServiceData.ts
++++ b/src/data/inner-data/ServiceData.ts
+@@ -21,7 +21,7 @@ const service_data: DataType[] = [
+       icon: serviceIcon_1,
+       title: "Buy a home",
+       btn: "Buy Home",
+-      desc: "Explore HOZN 2 million+ homes and uncover your ideal living space.",
++      desc: "Explore FCITY.ai’s verified land, plots and homes and uncover your ideal opportunity.",
+    },
+    {
+       id: 2,
+@@ -29,7 +29,7 @@ const service_data: DataType[] = [
+       icon: serviceIcon_2,
+       title: "Rent a Home",
+       btn: "Rent Home",
+-      desc: "Discover a rental you'll love on HOZN, thanks to 35+ filters.",
++      desc: "Discover the right property with FCITY.ai, thanks to 35+ filters.",
+       data_delay_time: "0.1s",
+    },
+    {
+@@ -47,7 +47,7 @@ const service_data: DataType[] = [
+       icon: serviceIcon_1,
+       title: "Mortgage",
+       btn: "Buy Home",
+-      desc: "Explore HOZN 2 million+ homes and uncover your ideal living space.",
++      desc: "Explore FCITY.ai’s verified land, plots and homes and uncover your ideal opportunity.",
+    },
+    {
+       id: 5,
+@@ -55,7 +55,7 @@ const service_data: DataType[] = [
+       icon: serviceIcon_2,
+       title: "Consulting",
+       btn: "Rent Home",
+-      desc: "Discover a rental you'll love on HOZN, thanks to 35+ filters.",
++      desc: "Discover the right property with FCITY.ai, thanks to 35+ filters.",
+       data_delay_time: "0.1s",
+    },
+    {
+diff --git a/src/layouts/footers/FooterFive.tsx b/src/layouts/footers/FooterFive.tsx
+index 913e42f..d62fea9 100644
+--- a/src/layouts/footers/FooterFive.tsx
++++ b/src/layouts/footers/FooterFive.tsx
+@@ -42,7 +42,7 @@ const FooterFive = () => {
+                               <Image src={footerLogo} alt="" />
+                            </Link>
+                         </div>
+-                        <p className="mb-45 md-mb-20">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
++                        <p className="mb-45 md-mb-20">Hyderabad, Telangana</p>
+                         <ul className="style-none d-flex align-items-center social-icon">
+                            <li><Link href="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                            <li><Link href="#"><i className="fa-brands fa-twitter"></i></Link></li>
+@@ -65,7 +65,7 @@ const FooterFive = () => {
+                </div>
+             </div>
+             <div className="bottom-footer">
+-               <p className="m0 text-center fs-16">Copyright @2025 HOZN.</p>
++               <p className="m0 text-center fs-16">Copyright @2025 FCITY.ai.</p>
+             </div>
+          </div>
+       </div>
+diff --git a/src/layouts/footers/FooterFour.tsx b/src/layouts/footers/FooterFour.tsx
+index bb83cd7..d8dabfd 100644
+--- a/src/layouts/footers/FooterFour.tsx
++++ b/src/layouts/footers/FooterFour.tsx
+@@ -18,8 +18,8 @@ const FooterFour = () => {
+                               <Image src={footerLogo} alt="" />
+                            </Link>
+                         </div>
+-                        <p className="mb-30 xs-mb-20">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
+-                        <Link href="#" className="email tran3s mb-60 md-mb-30">aljamal1stt@gmail.com</Link>
++                        <p className="mb-30 xs-mb-20">Hyderabad, Telangana</p>
++                        <Link href="#" className="email tran3s mb-60 md-mb-30">hello@fcity.ai</Link>
+                         <ul className="style-none d-flex align-items-center social-icon">
+                            <li><Link href="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                            <li><Link href="#"><i className="fa-brands fa-twitter"></i></Link></li>
+@@ -42,7 +42,7 @@ const FooterFour = () => {
+                </div>
+             </div>
+             <div className="bottom-footer">
+-               <p className="m0 text-center fs-16">Copyright @2025 HOZN.</p>
++               <p className="m0 text-center fs-16">Copyright @2025 FCITY.ai.</p>
+             </div>
+          </div>
+          <Image src={footerShape} alt="" className="lazy-img shapes shape_01" />
+diff --git a/src/layouts/footers/FooterOne.tsx b/src/layouts/footers/FooterOne.tsx
+index a70c5ae..66261e8 100644
+--- a/src/layouts/footers/FooterOne.tsx
++++ b/src/layouts/footers/FooterOne.tsx
+@@ -23,14 +23,15 @@ const FooterOne = ({ style }: any) => {
+                                  <Image src={style ? footerLogo_2 : footerLogo_1} alt="" />
+                               </Link>
+                            </div>
+-                           <p className="mb-60 lg-mb-40 md-mb-20">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
++                           <p className="mb-20 lg-mb-15 md-mb-10">Hyderabad, Telangana</p>
+                            <h6>CONTACT</h6>
+-                           <Link href="#" className={`email tran3s mb-70 lg-mb-50 ${style ? "font-garamond" : "fs-24 text-decoration-underline"}`}>Aljamal1stt@gmail.com</Link>
+-                           <ul className="style-none d-flex align-items-center social-icon">
++                           <Link href="mailto:hello@fcity.ai" className={`email tran3s mb-40 lg-mb-30 ${style ? "font-garamond" : "fs-24 text-decoration-underline"}`}>hello@fcity.ai</Link>
++                           <ul className="style-none d-flex align-items-center social-icon mb-30">
+                               {icon_1.map((icon, i) => (
+                                  <li key={i}><Link href="#"><i className={`fa-brands fa${style ? "" : "-square"}-${icon}`}></i></Link></li>
+                               ))}
+                            </ul>
++                           <p className="fs-14 opacity-75 lh-md">FCITY.ai is a technology and facilitation platform. Buyers should independently verify original title documents and legal status before any transaction.</p>
+                         </div>
+                         {style && <Image src={footerShape_1} alt="" className="lazy-img shapes shape_01" />}
+                      </div>
+diff --git a/src/layouts/footers/FooterThree.tsx b/src/layouts/footers/FooterThree.tsx
+index 511a533..83fef12 100644
+--- a/src/layouts/footers/FooterThree.tsx
++++ b/src/layouts/footers/FooterThree.tsx
+@@ -19,7 +19,7 @@ const FooterThree = () => {
+                               <Image src={footerLogo} alt="" />
+                            </Link>
+                         </div>
+-                        <p className="mb-45 lg-mb-30">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
++                        <p className="mb-45 lg-mb-30">Hyderabad, Telangana</p>
+                         <ul className="style-none d-flex align-items-center social-icon">
+                            <li><Link href="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
+                            <li><Link href="#"><i className="fa-brands fa-twitter"></i></Link></li>
+@@ -60,7 +60,7 @@ const FooterThree = () => {
+                      <li><Link href="/faq">Privacy &amp; Terms</Link></li>
+                      <li><Link href="/contact">Contact Us</Link></li>
+                   </ul>
+-                  <p className="mb-15 text-center text-lg-start fs-16 order-md-first">Copyright @2025 HOZN.</p>
++                  <p className="mb-15 text-center text-lg-start fs-16 order-md-first">Copyright @2025 FCITY.ai.</p>
+                </div>
+             </div>
+          </div>
+diff --git a/src/layouts/footers/FooterTwo.tsx b/src/layouts/footers/FooterTwo.tsx
+index 92e2fc0..b1642a2 100644
+--- a/src/layouts/footers/FooterTwo.tsx
++++ b/src/layouts/footers/FooterTwo.tsx
+@@ -21,7 +21,7 @@ interface ContentType {
+ const footer_content: ContentType = {
+    title: "Our Newsletter",
+    desc_1: "Get instant news by subscribe to our newsletter",
+-   desc_2: "11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt",
++   desc_2: "Hyderabad, Telangana",
+    email: "Emile@gmail.com",
+    number: "+210 0000-0000",
+    icon: ["facebook-f", "twitter", "instagram"],
+@@ -113,7 +113,7 @@ const FooterTwo = () => {
+                      <li><Link href="/faq">Cookies</Link></li>
+                      <li><Link href="/contact">Contact Us</Link></li>
+                   </ul>
+-                  <p className="mb-15 text-center text-lg-start order-md-first">Copyright @2025 HOZN.</p>
++                  <p className="mb-15 text-center text-lg-start order-md-first">Copyright @2025 FCITY.ai.</p>
+                </div>
+             </div>
+          </div>
+diff --git a/src/layouts/headers/HeaderThree.tsx b/src/layouts/headers/HeaderThree.tsx
+index 53fdb0a..ae28ec1 100644
+--- a/src/layouts/headers/HeaderThree.tsx
++++ b/src/layouts/headers/HeaderThree.tsx
+@@ -38,7 +38,7 @@ const HeaderThree = () => {
+                      </div>
+ 
+                      <div className="order-lg-2 d-none d-xxl-block">
+-                        <p className="m0 email-text ps-5 pe-5">Our Email <Link href="#" className="tran3s fw-500 ms-2">HOZN@gmail.com</Link></p>
++                        <p className="m0 email-text ps-5 pe-5">Our Email <Link href="#" className="tran3s fw-500 ms-2">hello@fcity.ai</Link></p>
+                      </div>
+ 
+                      <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-3">
+diff --git a/src/layouts/headers/HeaderTwo.tsx b/src/layouts/headers/HeaderTwo.tsx
+index c188ae6..2bf6c33 100644
+--- a/src/layouts/headers/HeaderTwo.tsx
++++ b/src/layouts/headers/HeaderTwo.tsx
+@@ -37,8 +37,8 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
+                                  Login <span className="d-none d-sm-inline-block"> {""} / Sign up</span></Link>
+                            </li>
+                               <li className="d-none d-md-inline-block ms-3 ms-xl-4 me-xl-4">
+-                                 <Link href="dashboard/add-property" className={style_1 ? "btn-ten" : "btn-two rounded-0"} target="_blank">
+-                                    <span>Add Listing</span> <i className="fa-thin fa-arrow-up-right"></i>
++                                 <Link href="/contact" className={style_1 ? "btn-ten" : "btn-two rounded-0"}>
++                                    <span>Talk to Advisor</span> <i className="fa-thin fa-arrow-up-right"></i>
+                                  </Link>
+                               </li>
+                               <li className="d-none d-xl-block">
+@@ -48,7 +48,7 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
+                               </li></>) : (<>
+                                  <li className="d-none d-md-flex align-items-center login-btn-one me-4 me-xxl-5">
+                                     <i className="fa-regular fa-phone-volume"></i>
+-                                    <Link href="tel:+210-0000-0000" className="tran3s">+210-0000-0000</Link>
++                                    <Link href="tel:+91-000-000-0000" className="tran3s">+91-000-000-0000</Link>
+                                  </li>
+                                  <li>
+                                     <Link href="#" data-bs-toggle="modal" data-bs-target="#loginModal" className="login-btn-two rounded-circle tran3s d-flex align-items-center justify-content-center"><i className="fa-regular fa-lock"></i></Link>
+diff --git a/src/modals/ListingDropdownModal.tsx b/src/modals/ListingDropdownModal.tsx
+index 56da813..ad0f74b 100644
+--- a/src/modals/ListingDropdownModal.tsx
++++ b/src/modals/ListingDropdownModal.tsx
+@@ -52,12 +52,12 @@ const ListingDropdownModal = ({
+                                           <NiceSelect className="nice-select location fw-normal"
+                                              options={[
+                                                 { value: "washington", text: "Washington DC" },
+-                                                { value: "mexico", text: "Acapulco, Mexico" },
+-                                                { value: "germany", text: "Berlin, Germany" },
+-                                                { value: "france", text: "Cannes, France" },
+-                                                { value: "india", text: "Delhi, India" },
+-                                                { value: "giza", text: "Giza, Egypt" },
+-                                                { value: "cuba", text: "Havana, Cuba" },
++                                                { value: "mexico", text: "Mucherla" },
++                                                { value: "germany", text: "Shamshabad" },
++                                                { value: "france", text: "Kollur" },
++                                                { value: "india", text: "Maheshwaram" },
++                                                { value: "giza", text: "Adibatla" },
++                                                { value: "cuba", text: "Shankarpally" },
+                                              ]}
+                                              defaultCurrent={0}
+                                              onChange={handleLocationChange}

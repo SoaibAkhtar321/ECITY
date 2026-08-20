@@ -33,14 +33,14 @@ const menu_data: MenuItem[] = [
     {
         id: 2,
         has_dropdown: true,
-        title: "Listing",
+        title: "Properties",
         link: "#",
         sub_menus: [
             
-            { link: "/listing_07", title: "Grid Top Filter" },
-            { link: "/listing_05", title: "Grid Sidebar" },
-            { link: "/listing_details_06", title: "Listing Details" },
-            { link: "/listing_09", title: "Grid Banner Filter" },
+            { link: "/listing_07", title: "All Properties" },
+            { link: "/listing_05", title: "Browse by Type" },
+            { link: "/listing_details_06", title: "Property Details" },
+            { link: "/listing_09", title: "Featured Opportunities" },
             
         ],
     },
@@ -49,10 +49,10 @@ const menu_data: MenuItem[] = [
     {
         id: 3,
         has_dropdown: true,
-        title: "Pages",
+        title: "Company",
         link: "#",
         sub_menus: [
-            { link: "/about_us_02", title: "About us" },
+            { link: "/about_us_02", title: "About FCITY.ai" },
             { link: "/contact", title: "Contact Us" },
             { link: "/faq", title: "FAQ's" },
             
@@ -66,13 +66,13 @@ const menu_data: MenuItem[] = [
     {
         id: 4,
         has_dropdown: true,
-        title: "Blog",
+        title: "Insights",
         link: "#",
         sub_menus: [
-            { link: "/blog_01", title: "Blog Grid" },
-            { link: "/blog_02", title: "Blog List" },
-            { link: "/blog_03", title: "Blog 2 column" },
-            { link: "/blog_details", title: "Blog Details" },
+            { link: "/blog_01", title: "Market Insights" },
+            { link: "/blog_02", title: "Guides" },
+            { link: "/blog_03", title: "Future City Updates" },
+            { link: "/blog_details", title: "Article" },
         ],
     },
 ];

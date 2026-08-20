@@ -2,7 +2,7 @@ import Faq from "@/components/inner-pages/faq";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Faq HOZN - Real Estate React Next js",
+   title: "FCITY.ai — Faq",
 };
 const index = () => {
    return (

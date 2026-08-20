@@ -2,7 +2,7 @@ import PasswordChange from "@/components/dashboard/account-settings/password-cha
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Dashboard Account Password Change HOZN - Real Estate React Next js",
+   title: "FCITY.ai — Dashboard Account Password Change",
 };
 const index = () => {
    return (

@@ -2,7 +2,7 @@ import DashboardReview from "@/components/dashboard/review";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Dashboard Review HOZN - Real Estate React Next js",
+   title: "FCITY.ai — Dashboard Review",
 };
 const index = () => {
    return (

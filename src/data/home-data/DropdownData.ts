@@ -24,7 +24,7 @@ const dropdoun_data: InputField[] = [
       page: "home_1",
       col: "col-xl-4",
       label: "Location",
-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -50,7 +50,7 @@ const dropdoun_data: InputField[] = [
       page: "home_2_tab_1",
       col: "col-xl-3",
       label: "Location",
-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -75,7 +75,7 @@ const dropdoun_data: InputField[] = [
       page: "home_2_tab_2",
       col: "col-xl-3",
       label: "Location",
-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -100,7 +100,7 @@ const dropdoun_data: InputField[] = [
       page: "home_3_tab_1",
       col: "mb-25",
       label: "Location",
-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -126,7 +126,7 @@ const dropdoun_data: InputField[] = [
       page: "home_3_tab_2",
       col: "mb-25",
       label: "Location",
-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -152,7 +152,7 @@ const dropdoun_data: InputField[] = [
       page: "home_3_tab_3",
       col: "mb-25",
       label: "Location",
-      options: [{ value: "1", text: "Berlin, Germany" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Dhanmondi, Dhaka" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Shamshabad" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Future City" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -180,7 +180,7 @@ const dropdoun_data: InputField[] = [
       col: "col-lg-4",
       label: "Location",
       border_lg: "border-left",
-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -207,7 +207,7 @@ const dropdoun_data: InputField[] = [
       col: "col-lg-4",
       label: "Location",
       border_lg: "border-left",
-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -231,7 +231,7 @@ const dropdoun_data: InputField[] = [
       id: 2,
       page: "home_6_tab_1",
       label: "Location",
-      options: [{ value: "1", text: "Dhanmondi, Dhaka" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Future City" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -255,7 +255,7 @@ const dropdoun_data: InputField[] = [
       id: 2,
       page: "home_6_tab_2",
       label: "Location",
-      options: [{ value: "1", text: "Acapulco, Mexico" }, { value: "2", text: "Dhanmondi, Dhaka" }, { value: "3", text: "Berlin, Germany" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Mucherla" }, { value: "2", text: "Future City" }, { value: "3", text: "Shamshabad" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {
@@ -279,7 +279,7 @@ const dropdoun_data: InputField[] = [
       id: 2,
       page: "home_6_tab_3",
       label: "Location",
-      options: [{ value: "1", text: "Berlin, Germany" }, { value: "2", text: "Acapulco, Mexico" }, { value: "3", text: "Dhanmondi, Dhaka" }, { value: "4", text: "Cannes, France" }, { value: "5", text: "Delhi, India" }, { value: "6", text: "Giza, Egypt" }, { value: "7", text: "Havana, Cuba" },],
+      options: [{ value: "1", text: "Shamshabad" }, { value: "2", text: "Mucherla" }, { value: "3", text: "Future City" }, { value: "4", text: "Kollur" }, { value: "5", text: "Maheshwaram" }, { value: "6", text: "Adibatla" }, { value: "7", text: "Shankarpally" },],
       className: "location",
    },
    {

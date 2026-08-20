@@ -2,7 +2,7 @@ import Error from "@/components/inner-pages/error";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "404 error || HOZN - Real Estate React Next js",
+   title: "FCITY.ai — 404 error ||",
 };
 const index = () => {
    return (

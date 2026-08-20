@@ -18,8 +18,8 @@ const FooterFour = () => {
                               <Image src={footerLogo} alt="" />
                            </Link>
                         </div>
-                        <p className="mb-30 xs-mb-20">11910 Cairo Suite 210, Kafralshakh , Cairo, Egypt</p>
-                        <Link href="#" className="email tran3s mb-60 md-mb-30">aljamal1stt@gmail.com</Link>
+                        <p className="mb-30 xs-mb-20">Hyderabad, Telangana</p>
+                        <Link href="#" className="email tran3s mb-60 md-mb-30">hello@fcity.ai</Link>
                         <ul className="style-none d-flex align-items-center social-icon">
                            <li><Link href="#"><i className="fa-brands fa-facebook-f"></i></Link></li>
                            <li><Link href="#"><i className="fa-brands fa-twitter"></i></Link></li>
@@ -42,7 +42,7 @@ const FooterFour = () => {
                </div>
             </div>
             <div className="bottom-footer">
-               <p className="m0 text-center fs-16">Copyright @2025 HOZN.</p>
+               <p className="m0 text-center fs-16">Copyright @2025 FCITY.ai.</p>
             </div>
          </div>
          <Image src={footerShape} alt="" className="lazy-img shapes shape_01" />
