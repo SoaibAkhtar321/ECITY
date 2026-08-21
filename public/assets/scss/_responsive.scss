@@ -165,7 +165,10 @@
    .title-one h2.fs-xl {font-size: 75px;}
    .title-one h2.fs-lg {font-size: 70px;}
    .hero-banner-one .hero-heading {font-size: 68px;}
-   .hero-banner-two .hero-heading {font-size: 82px;}
+   .hero-banner-two .hero-heading {font-size: 82px; max-width: 100%;}
+   .hero-banner-two .shape_01 {display: none;}
+   .hero-banner-two .shape_02 {right: 4%; bottom: 22%; max-width: 11%;}
+   .hero-banner-two .ai-assistant-cta__title {font-size: 18px;}
    .hero-banner-three .hero-heading {font-size: 82px;}
    .hero-banner-four .hero-heading {font-size: 85px;}
    .hero-banner-four .hero-heading span img {width: 65px; height: 65px;}
@@ -396,6 +399,11 @@
    .hero-banner-two .hero-heading,.hero-banner-three .hero-heading {font-size: 55px; line-height: 1.15em;}
    .hero-banner-five .hero-heading {font-size: 55px; line-height: 1.1em;}
    .hero-banner-two .hero-heading span img {width: 30px;}
+   .hero-banner-two .shape_01 {display: none;}
+   .hero-banner-two .shape_02 {position: static; display: inline-flex; max-width: 44px; margin: 10px 0 0;}
+   .hero-banner-two .illustration {max-width: 80%; position: relative; margin-top: 30px;}
+   .hero-banner-two .hero-cta-group {width: 100%;}
+   .hero-banner-two .ai-assistant-cta {width: 100%; justify-content: flex-start;}
    .hero-banner-six .hero-heading {font-size: 40px; line-height: 1.25em;}
    .hero-banner-seven {height: 750px;}
    .fs-24 {font-size: 20px;}
@@ -613,6 +621,9 @@
    .pricing-section-one .main-bg {border: none;}
    .pricing-section-one .pr-column-wrapper .pr-header {margin-bottom: 40px;}
    .listing-slider-one.vw-100 {width: 100% !important;}
+   .hero-banner-two .hero-cta-group {flex-direction: column; align-items: stretch;}
+   .hero-banner-two .btn-seven {margin-right: 0 !important; text-align: center; justify-content: center;}
+   .hero-banner-two .ai-assistant-cta {margin-left: 0;}
  }
  /*(max-width: 767px)*/
  
