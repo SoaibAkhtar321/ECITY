@@ -1,0 +1,15 @@
+import BlogDetails from "@/components/blogs/blog-details";
+import Wrapper from "@/layouts/Wrapper";
+
+export const metadata = {
+   title: "FCITY.ai — Blog Details",
+};
+const index = () => {
+   return (
+      <Wrapper>
+         <BlogDetails />
+      </Wrapper>
+   )
+}
+
+export default index
